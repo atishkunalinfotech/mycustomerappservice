@@ -1,0 +1,469 @@
+<%= render 'tab' %>
+<script>
+  $.noConflict();
+  
+  jQuery(document).ready(function() {
+
+  jQuery(function() {
+  jQuery('#report_start_date').datepicker( 
+    { altField  : '#report_start_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+    jQuery(function() {
+    jQuery('#report_end_date').datepicker( 
+    { altField  : '#report_end_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+});
+
+  jQuery(document).ready(function() {
+
+  jQuery(function() {
+  jQuery('#report1_start_date').datepicker( 
+    { altField  : '#report_start_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+    jQuery(function() {
+  jQuery('#report1_end_date').datepicker( 
+    { altField  : '#report_end_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+});
+
+    jQuery.noConflict();
+  jQuery(document).ready(function() {
+
+  jQuery(function() {
+  jQuery('#report2_start_date').datepicker( 
+    { altField  : '#report_start_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+    jQuery(function() {
+  jQuery('#report2_end_date').datepicker( 
+    { altField  : '#report_end_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+});
+
+  jQuery(document).ready(function() {
+
+  jQuery(function() {
+  jQuery('#report3_start_date').datepicker( 
+    { altField  : '#report_start_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+    jQuery(function() {
+  jQuery('#report3_end_date').datepicker( 
+    { altField  : '#report_end_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+});
+
+  jQuery(document).ready(function() {
+
+  jQuery(function() {
+  jQuery('#report4_start_date').datepicker( 
+    { altField  : '#report_start_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+    jQuery(function() {
+  jQuery('#report4_end_date').datepicker( 
+    { altField  : '#report_end_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+});
+
+  jQuery(document).ready(function() {
+
+  jQuery(function() {
+  jQuery('#report5_start_date').datepicker( 
+    { altField  : '#report_start_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+    jQuery(function() {
+  jQuery('#report5_end_date').datepicker( 
+    { altField  : '#report_end_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+});
+
+  jQuery(document).ready(function() {
+
+  jQuery(function() {
+  jQuery('#report6_start_date').datepicker( 
+    { altField  : '#report_start_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+    jQuery(function() {
+  jQuery('#report6_end_date').datepicker( 
+    { altField  : '#report_end_date',  // selector of the hidden input field you want sent to the server
+      dateFormat: 'dd-mm-yy',
+      altFormat : 'dd-mm-yy' } );
+    });
+
+});
+
+</script>
+
+<h2>Suppliers that get most complaints/compliments</h2><br/>
+
+<table>
+  <%= form_for :report5, :url=> most_company_xls_admin_reports_path, :method => :get do |f| %>
+    <h4>Filter most complaints/compliments</h4>
+    <tr>
+      <td>Company </td>
+      <td><span >
+        <%= f.text_field :company %>
+      </span></td>
+      <td>From Date </td>
+      <td><span >
+        <%= f.text_field :start_date, :required => :true%>
+      </span></td>
+      <td>To Date </td>
+      <td><span >
+        <%= f.text_field :end_date,:required => :true %>
+         </span>
+      </td>
+    </tr>
+    <td><%= button_tag  :submit ,name:"subaction",value: "most_company",:class => "btn btn btn-primary" %></td>    
+  <%end%>
+</table>
+
+<table id="total_compliment">
+  <thead>
+     
+        <th>Most Compliments</th>
+        <th>Total Count</th>
+     
+  </thead>
+    
+  <tbody>
+     
+      <tr>
+        <td width="50%"><strong><%= Company.find(@value_compliments).title rescue nil%></strong></td>
+        <td width="50%"><strong><%= @max_compliment rescue nil%></strong></td>
+      </tr>
+   
+  </tbody>
+</table>
+<br/><br/>
+<table id="most_complaints">
+  <thead>
+      <tr>
+        <th>Most Complaints</th>
+        <th>Total</th>
+      </tr>
+  </thead>
+    
+  <tbody>
+
+      <tr>
+        <td width="50%"><strong><%= Company.find(@value_complaints).title rescue nil%></strong></td>
+        <td width="50%"><strong><%= @max_complaint rescue nil%></strong></td>
+      </tr>
+   
+  </tbody>
+</table>
+<br/><br/>
+
+<h2>Total number of reviews for each company/supplier</h2><br/>
+<table>
+  <%= form_for :report, :url=> company_xls_admin_reports_path, :method => :get do |f| %>
+    <h4>Filter reviews for each company/supplier</h4>
+    <tr>
+      <td>From Date </td>
+      <td><span >
+        <%= f.text_field :start_date, :required => :true%>
+      </span></td>
+      <td>To Date </td>
+      <td><span >
+        <%= f.text_field :end_date,:required => :true %>
+         </span>
+      </td>
+    </tr>
+    <td><%= button_tag  :submit ,name:"subaction",value: "company_total",:class => "btn btn btn-primary" %></td>    
+  <%end%>
+</table>
+<table id="company_supplier">
+	<thead>
+      <tr>
+        <th>Company</th>
+        <th>Link</th>
+      </tr>
+	</thead>
+		
+	<tbody>
+	  <%@companies.each do |company|%>
+      <% c = get_company_from_supplier(company)%>
+      <tr>
+      	<td><%= c.title rescue nil%></td>
+      	<td><%= link_to "Download reviews", supplier_level_admin_reports_path(:company => c.id)%></td>
+      </tr>
+      <%end%>
+	</tbody>
+</table>
+<br/><br/>
+
+<h2>Supplier Profiles</h2>
+<table>
+  <%= form_for :report2, :url=> suppliers_profiles_admin_reports_path, :method => :get do |f| %>
+    <h4>Filter Supplier Profiles</h4>
+    <tr>
+      <td>From Date </td>
+      <td><span >
+        <%= f.text_field :start_date, :required => :true%>
+      </span></td>
+      <td>To Date </td>
+      <td><span >
+        <%= f.text_field :end_date,:required => :true %>
+         </span>
+      </td>
+    </tr>
+    <td><%= button_tag  :submit ,name:"subaction",value: "supplier_profiles",:class => "btn btn btn-primary" %></td>    
+  <%end%>
+</table>
+
+<table id="supplierprofile">
+  <thead>
+      <tr>
+        <th>Supplier</th>
+        <th>Link</th>
+      </tr>
+  </thead>
+    
+  <tbody>
+    <%@suppliers.each do |supplier|%>
+      <tr>
+        <td><%= supplier.supplier_name rescue nil%></td>
+        <td><%= link_to "Download Profile", supplier_profiles_admin_reports_path(:supplier => supplier.id)%></td>
+      </tr>
+      <%end%>
+  </tbody>
+</table>
+<br/><br/>
+
+
+<h1>Total number of Registered Companies</h1>
+<table>
+  <%= form_for :report3, :url=> registered_suppliers_admin_reports_path, :method => :get do |f| %>
+    <h4>Filter Registered Companies</h4>
+    <tr>
+      <td>From Date </td>
+      <td><span >
+        <%= f.text_field :start_date, :required => :true%>
+      </span></td>
+      <td>To Date </td>
+      <td><span >
+        <%= f.text_field :end_date,:required => :true %>
+         </span>
+      </td>
+    </tr>
+    <td><%= button_tag  :submit ,name:"subaction",value: "registered_suppliers",:class => "btn btn btn-primary" %></td>    
+  <%end%>
+</table>
+
+<table id="registered_supplier">
+  <thead>
+    <tr>
+      <th width="10%">Supplier Company</th>
+      <th width="10%">Industry</th>
+      <th width="10%">Subscription</th>
+      <th width="10%">Start Date</th>
+      <th width="10%">End Date</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @supplier_registered.each do |supplier| %>
+      <tr>
+        <td><%= supplier.supplier_name rescue nil%></td>
+        <td><%= supplier.industry rescue nil%></td>
+        <td><%= supplier.subscription rescue nil%></td>
+        <td><%= supplier.start_date rescue nil%></td>
+        <td><%= supplier.end_date rescue nil%></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br/><br/>
+
+<h1>Total number of Un-registered Companies</h1>
+<table>
+  <%= form_for :report4, :url=> unregistered_suppliers_admin_reports_path, :method => :get do |f| %>
+    <h4>Filter Un-Registered Companies</h4>
+    <tr>
+      <td>From Date </td>
+      <td><span >
+        <%= f.text_field :start_date, :required => :true%>
+      </span></td>
+      <td>To Date </td>
+      <td><span >
+        <%= f.text_field :end_date,:required => :true %>
+         </span>
+      </td>
+    </tr>
+    <td><%= button_tag  :submit ,name:"subaction",value: "unregistered_suppliers",:class => "btn btn btn-primary" %></td>    
+  <%end%>
+</table>
+<table id="unregistered_supplier">
+  <thead>
+    <tr>
+      <th width="10%">Supplier Company</th>
+      <th width="10%">Industry</th>
+      <th width="10%">Subscription</th>
+      <th width="10%">Start Date</th>
+      <th width="10%">End Date</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @supplier_unregistered.each do |supplier| %>
+      <tr>
+        <td><%= supplier.supplier_name rescue nil%></td>
+        <td><%= supplier.industry rescue nil%></td>
+        <td><%= supplier.subscription rescue nil%></td>
+        <td><%= supplier.start_date rescue nil%></td>
+        <td><%= supplier.end_date rescue nil%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2>Conversions – Company conversion stats</h2>
+<table>
+  <%= form_for :report6, :url=> company_admin_reports_path, :method => :get do |f| %>
+    <h4>Filter Company conversion Records</h4>
+    <tr>
+      <td>From Date </td>
+      <td><span >
+        <%= f.text_field :start_date, :required => :true%>
+      </span></td>
+      <td>To Date </td>
+      <td><span >
+        <%= f.text_field :end_date,:required => :true %>
+         </span>
+      </td>
+    </tr>
+    <td><%= button_tag  :submit ,name:"subaction",value: "company_stat_record",:class => "btn btn btn-primary" %></td>    
+  <%end%>
+</table>
+<%if params[:subaction] == "company_stat_record" %>
+   <%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Download Company Conversions", company_admin_reports_path(params.merge(format: "xls")), :method=> :get %><br/>
+<%else%>
+  <%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Download Company Conversions(12 months)", company_admin_reports_path(params.merge(format: "xls")), :method=> :get %><br/>
+<%end%>
+<table id="admin_review_xls" >
+  <thead>
+    <tr>
+      <th width="10%">Date</th>
+      <th width="15%">Ticket Number</th>
+      <th width="15%">Company</th>
+      <th width="15%">Nature of Review</th>
+      <th width="15%">Title</th>
+      <th width="15%">Customer Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+    <% c = get_company_from_supplier(company)%>
+    <% @compliment = Review.where('Date(created_at) >= ? and Date(Date(created_at)) <= ? and company_id = ? and user_id is not null', @start_from, @start_to, c.id) %>
+     
+    <% @compliments = @compliment.where('change_date is not null') %> 
+      <% @compliments.each do |compliment|%>
+        <tr>
+          <td><%= compliment.date_time  rescue nil%></td>
+          <td><%= compliment.ticket_number  rescue nil%></td>
+          <td><%= compliment.company.title.titleize  rescue nil%></td>
+          <td><%= compliment.nature_of_review  rescue nil%></td>
+          <td><%= compliment.title.titleize  rescue nil%></td>
+          <td><%= compliment.try(:user).try(:full_name) rescue nil%></td>
+        </tr>
+      <%end%>
+    <% end %>
+  </tbody>  
+</table>
+<br/><br/>
+<table>
+  <%= form_for :report1, :url=> conversion_company_admin_reports_path, :method => :get do |f| %>
+    <h4>Filter Company conversion Stats</h4>
+    <tr>
+      <td>From Date </td>
+      <td><span >
+        <%= f.text_field :start_date, :required => :true%>
+      </span></td>
+      <td>To Date </td>
+      <td><span >
+        <%= f.text_field :end_date,:required => :true %>
+         </span>
+      </td>
+    </tr>
+    <td><%= button_tag  :submit ,name:"subaction",value: "conversion_company",:class => "btn btn btn-primary" %></td>    
+  <%end%>
+</table>
+<h2>Conversions – Company conversion stats (12 Months)(From <%= (1.year.ago).strftime('%d-%m-%Y')%>  to  <%= (Date.today).strftime('%d-%m-%Y')%>)</h2>
+   
+<table id="industry_conversion">
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Total Complaints Count</th>
+      <th>Complaint --> Compliment</th>
+      <th>Conversion Percentage</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+    <% c = get_company_from_supplier(company)%>
+    <% @compliment = Review.where('Date(created_at) >= ? and Date(created_at) <= ? and company_id = ? and user_id is not null', 1.year.ago, Date.today, c.id) rescue nil%>
+    
+    <% @complaint_conversion = @compliment.where('review_type = ?', 'complaint').count rescue nil%>
+      
+    <% @compliments = @compliment.where('change_date is not null').count rescue nil%> 
+      <tr>
+        <td><%=c.title rescue nil %></td>
+        <td><%=@complaint_conversion + @compliments rescue nil %></td>
+        <td><%=@compliments rescue nil %></td>
+        <% @a = @complaint_conversion + @compliments %>
+        <% @percentage =  @compliments / @a * 100 rescue nil%>
+        <%unless @percentage.present?%>
+          <td>0</td>
+        <%else%>
+          <td><%= @percentage rescue nil%>%</td>
+        <%end%>
+      </tr>
+    <%end%>
+  </tbody>  
+</table>
+
+<br/><br/>
+
+

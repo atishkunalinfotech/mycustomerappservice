@@ -1,0 +1,69 @@
+<%if params[:subaction] == "reviews_processed" %>
+  <h4>Quantity:number of reviews processed by each agent</h4>
+  <strong>Displaying data for duration <%= params[:report][:start_date] rescue nil%> to <%= params[:report][:end_date] rescue nil%>
+<%elsif params[:id] == "data_dump"%>
+    <strong>Quantity: number of reviews processed by each agent</strong>
+<%else%>
+  Quantity: number of reviews processed by each agent
+<%end%>
+
+<table id="reviews_processed">
+	<thead>
+		<tr>
+			<th>Sr. No</th>
+     		<th>Role</th>
+      		<th>Date Created</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Preferred Alias</th>
+      		<th>Email Address</th>
+			<th>Reviews Alloted</th>
+		    <th>Reviews Processed</th>
+		</tr>
+	</thead>
+
+	<tbody>
+	    <% @track_times.each_with_index.each do |jagent,i|%>
+	      <%@user = User.find(jagent) rescue nil%>
+	      <%if params[:id] == "data_dump"%>
+	         <% if @user.role == "jagent" %>
+	            <%@tracks = @user.track_times rescue nil%>
+	            <%@track_allocated = @tracks %>
+	         <%else%>
+	            <%@track_allocated = @user.track_times.where('date_complete is null') rescue nil%>
+
+                <%@tracks = TrackTime.where('user_id = ? OR direct_user_id = ?',@user.id,@user.id) rescue nil%>
+	         <%end%>
+	      <%else%>
+	        <% if @user.role == "jagent" %>
+	          <%@tracks = @user.track_times.where('Date(created_at) >= ? and Date(Date(created_at)) <= ?',@start_from, @start_to) rescue nil%>
+	          <%@track_allocated = @tracks %>
+	        <%else%>
+	          <%@track_allocated = @user.track_times.where('Date(created_at) >= ? and Date(Date(created_at)) <= ? and date_complete is null',@start_from, @start_to) rescue nil%>
+
+	          <%@tracks = TrackTime.where('Date(created_at) >= ? and Date(Date(created_at)) <= ? and user_id = ? OR Date(created_at) >= ? and Date(Date(created_at)) <= ? and direct_user_id = ?',@start_from, @start_to,@user.id,@start_from, @start_to,@user.id) rescue nil%>
+	        <%end%>
+	      <%end%>
+	      <%@processed = @tracks.where('date_complete is not null or direct_processed = ? and direct_user_id = ?',true,@user.id).count rescue nil%>
+		<tr>
+			<td><%= i+1%></td>
+      		<td>
+      			<% if @user.role == "jagent" %>
+      			JR Agent
+      			<% elsif @user.role == "agent" %>
+      			SR Agent
+      			<% else %>
+      			Admin
+      			<% end %>
+      		</td>
+      		<td><%= @user.created_at.strftime("%d/%m/%y") rescue nil%></td>
+			<td><%= @user.first_name rescue nil%></td>
+			<td><%= @user.last_name rescue nil%></td>
+			<td><%= @user.preferred_alias rescue nil%></td>
+			<td><%= @user.email rescue nil%></td>
+			<td><%= @track_allocated.count rescue nil%></td>
+			<td><%= @processed%></td>
+		</tr>
+		<%end%>
+	</tbody>
+</table>

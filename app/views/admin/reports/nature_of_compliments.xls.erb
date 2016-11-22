@@ -1,0 +1,18 @@
+<table id="compliments">
+	<thead>
+		<tr>
+			<th>Nature of Compliment</th>
+			<th>Total</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<% @n.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

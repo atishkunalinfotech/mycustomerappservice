@@ -1,0 +1,62 @@
+<%#content_for :left do%>
+	 <!-- <span class="span1"></span> -->
+<%#end%>
+
+<%#content_for :right do%>
+	 <!-- <span class="span1"></span> -->
+<%#end%>
+
+<div class="page-link">
+          <ul>
+               <li><a href="<%= root_path %>">Home</a></li>
+                <li><span>&raquo;</span></li>
+                <li><a href="<%= profile_path %>" class="selected">My Account</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    
+        <div class="min-box">
+          <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <%= hidden_field_tag :guest_token ,params[:guest_token] if params[:guest_token]%>
+     <%= hidden_field_tag :review_id ,params[:review_id] if params[:review_id]%>
+          <div class="login-box">
+              <div class="log-head">Login</div>
+                <div class="login-field-box">
+                  <div class="text-box1">Email *</div>
+                    <%= f.email_field :email, :autofocus => true ,:required => true, :class => "field1"%>
+                </div>
+                <div class="clear"></div>
+                <div class="login-field-box">
+                  <div class="text-box1">Password *</div>
+                    <%= f.password_field :password  ,:required => true, :class => "field1" %>
+                </div>
+                <div class="clear"></div>
+                <div class="login-field-box2">
+                  <div class="text-box2 design"><%= link_to "Forgotten your password?", new_password_path(resource_name), :style => "font-family:andlso;font-size:15px;" %></div>
+                   <%= f.submit "Login", :class => "btn2" %>
+                </div>
+            </div>
+          <% end %>
+            <form action="/users/sign_up" method="get">
+            <%= hidden_field_tag :guest_token ,params[:guest_token] if params[:guest_token]%>
+
+            <div class="register-box">
+              <div class="log-head">
+                New to xemaxema.com
+                </div>
+                <div class="login-field-box">
+                  <div class="text-box1">Email *</div>
+                   <%= email_field_tag :email, nil, required: true ,:class=> "field1" %>
+                </div>
+                <div class="clear"></div>
+                
+                <div class="clear"></div>
+                <div class="login-field-box2">
+                   <%= submit_tag "Register", :class => "btn2" %>
+                </div>
+            </div>
+          </form>
+            <div class="clear"></div>
+        </div>
+     
+

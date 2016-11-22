@@ -1,0 +1,91 @@
+<%content_for :left do%>
+	<span class="span3">
+	</span>
+<%end%>
+  <div class="page-link">
+          <ul>
+                <li><a href="<%= root_path %>">Home</a></li>
+                <li><span>&raquo;</span></li>
+                <li><a href="#" class="selected">Contact Us</a></li>
+            </ul>
+        </div>  
+<div class="min-box">
+	<%= form_for(@contact_u) do |f| %>
+		<% if @contact_u.errors.any? %>
+		  <div id="error_explanation">
+		    <h2><%= pluralize(@contact_u.errors.count, "error") %> prohibited this contact from being send:</h2>
+
+		    <ul>
+		    <% @contact_u.errors.full_messages.each do |msg| %>
+		      <li><%= msg %></li>
+		    <% end %>
+		    </ul>
+		  </div>
+		<% end %>
+            <div class="row-reg">
+                    <div class="login-field-box row-left">
+                        <div class="text-box1">First Name *</div>
+                        <%= f.text_field :first_name, :value => "#{current_user.try(:first_name)}" ,:pattern => '[A-Za-z]+',"maxlength"=>"35", "min" => "1","max" => "35", :class => "field1" %>
+                    </div>
+                    <div class="login-field-box row-right">
+                        <div class="text-box1">Last Name *</div>
+                        <%= f.text_field :last_name, :value => "#{current_user.try(:last_name)}",:pattern => '[A-Za-z]+',"maxlength"=>"35", "min" => "1","max" => "35", :class => "field1" %>
+                    </div>
+        </div>
+                <div class="clear"></div>
+                <div class="row-reg">
+                    <div class="login-field-box row-left">
+                        <div class="text-box1">Email *</div>
+                        <%= f.email_field :email, :value => "#{current_user.try(:email)}",required: true, "maxlength"=>"35", "min" => "1","max" => "35" , :class => "field1"%>
+                    
+                    </div>
+                    <div class="login-field-box row-right">
+                        <div class="text-box1">Telephone</div>
+                        <%= f.text_field :telephone, :pattern => '[0-9]+',"maxlength"=>"10", "min" => "1","max" => "10", :class => "field1", :placeholder => "070712345678" %>
+                    
+                    </div>
+        </div>
+                <div class="clear"></div>
+                <div class="row-reg">
+                    <div class="login-field-box  row-left">
+                        <div class="text-box1">Message Type *</div>
+                        <%= f.select :message_type, [ ["General Enquiries", "General Enquiries"],["Give us Feedback", "Give us Feedback"],["Manage my Ticket" , "Manage my Ticket"],["My Account" , "My Account"],["Report Abuse","Report Abuse"],[" Technical Assistance", "Technical Assistance"],["Other - Please Specify", "Other"] ],  {:prompt => "Select Message Type"},:onchange => 'CheckOther();', :class=> "field1 slt2", :style => "width:200px;"%>
+                    </div>
+                    <div class="login-field-box row-right">
+                        <div class="text-box1">&nbsp;</div>
+                    <input type="text" class="field1" name="other_type" id="other_type", placeholder ="Other" value="">
+                    </div>
+        </div>
+            <div class="clear"></div>
+            <div class="login-field-boxnew">
+              <div class="text-box1">Message *</div>
+                <%= f.text_area :message, :rows=>"5",:class =>"text-area4new fr-bt","maxlength"=>"1200", :placeholder => "Please type your message here." %>
+            </div>
+            <div class="clear"></div><br/>
+        
+            <div class="new-captcha cap-con">
+              <span style = "font-weight: lighter;color:#696969;font-family:andlso;font-size:15px;">Are you human? Please enter the values as shown in the box below.</span>
+              <%#= recaptcha_tags %><br/>
+              <%=f.submit "xema", :class=> "btn2 left-align" %>
+           </div> 
+  <% end %>    
+        </div>
+
+
+
+<script type="text/javascript">
+$( document ).ready(function() {
+	$("#other_type").hide();
+});
+
+function CheckOther()
+{
+  if (document.getElementById("contact_u_message_type").value == "Other"){
+        $("#other_type").show();
+    }     
+    else{
+       $("#other_type").hide();
+    }     
+}
+
+</script>

@@ -1,0 +1,183 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#more_details").hide();
+  $("#hide").hide();
+  
+  $("#hide").click(function(){
+    $("#more_details").hide();
+    $("#show").show();
+    $("#hide").hide();
+  });
+  $("#show").click(function(){
+    $("#more_details").show();
+    $("#show").hide();
+    $("#hide").show();
+  });
+});
+</script>
+<input type="button" id="hide" class="btn btn-primary" value="Hide Ticket">
+<input type="button" id="show" class="btn btn-primary" value="Expand Ticket">
+<%= link_to "Comments & Notes", admin_review_path(@review) ,:class => "btn btn-primary" %>
+<%= form_for([:admin,@review]) do |f| %>
+  <% if @review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+      <% @review.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%if @review.track_times.present?%>
+    <strong>Review should be processed on or before <%= (@review.track_times.first.date_proposed).strftime("%d-%m-%y")  rescue nil %></strong><br/>
+  <%end%>
+  <div class="field">
+    <strong> Ticket Number: </strong><%=@review.ticket_number%>
+  </div><br/>
+  <div id="more_details">
+      <% if @review.change_date %>
+<p>
+  <strong>Converted:</strong>
+  Yes
+</p>
+<% end %>
+      <div class="field">
+         <strong>Review Type: </strong><%= @review.review_type %>
+      </div><br/>
+      <% unless current_user.is_jagent? %>
+      <div class="field">
+         <strong>Customer Name: </strong><%= @review.user.try(:full_name) %>
+      </div><br/>
+      <div class="field">
+         <strong>Customer Email: </strong><%= @review.user.email %>
+      </div><br/>
+       <div class="field">
+         <strong>Account Details: </strong><%= @review.account_details
+          %>
+      </div><br/>
+      <% if @review.review_type == "complaint" %>
+        <div class="field">
+           <strong>Desired Outcome: </strong><%= @review.desired_outcome %>
+        </div><br/>
+      <% end %>
+      <% end %>
+      <div class="field">
+         <strong>Alias Name: </strong><%= @review.user.try(:preferred_alias) %>
+      </div><br/>
+      <div class="field">
+    		<strong>Title:</strong><%= @review.title  rescue nil%>
+      </div><br/>
+      <div class="field">
+    		<strong>Review:</strong>
+        <p><%= @review.message rescue nil %></p>
+      </div><br/>
+      <div class="field">
+      <strong>Industry:</strong>
+      <%= @review.industry.title  rescue nil%>
+    </div><br/>
+
+    <div class="field">
+      <strong>Company:</strong>
+      <%= @review.company.title rescue nil %>
+    </div><br/>
+
+    <div class="field">
+      <strong>Town:</strong>
+      <%= @review.town.title  rescue nil%>
+    </div><br/>
+
+    <div class="field">
+      <strong>Location:</strong>
+      <%= @review.location.title  rescue nil%>
+    </div><br/>
+
+
+    <div class="field">
+      <strong>Personal Responsible:</strong>
+      <%= @review.personal_responsible %>
+    </div><br/>
+
+    <div class="field">
+      <strong>Nature of Review:</strong>
+      <%= @review.nature_of_review %>
+    </div><br/>
+
+    <div>
+  <strong>Incident Date:</strong>
+  <%= @review.date.strftime("%d %b %Y")  %>
+</div><br/>
+<div>
+  <strong>Incident Time:</strong>
+  <%= @review.datetime.strftime("%H:%M")  %>
+</div><br/>
+<div>
+  <strong>Created Date:</strong>
+  <%= @review.created_at.strftime("%d %b %Y %H:%M") %>
+</div><br/>
+<div>
+  <strong>Published Date:</strong>
+  <%= @review.published_date.strftime("%d %b %Y %H:%M") if @review.ispublished %>
+</div>
+  </div><br/>
+
+
+  <% unless @review.file.file.nil? %>
+  Attached File: <%= link_to image_tag(@review.file.url),@review.file.url %>
+  <% end %>
+  <div>
+		<strong>Edit Review:</strong>
+		<input type="checkbox" name="review[is_modified]" id="review_is_modified" value="true" style="opacity:1;" <%= @review.is_modified ? 'checked' : '' %>>
+  </div>
+  <div id="agent_modified_review" class="field">
+		<strong>Modified Review:</strong><br/>
+    <%= f.text_area :modified_review , :value=>(@review.is_modified ? @review.modified_review : @review.message) ,:style=>"width: 611px; height: 147px;"%>
+  </div>
+  <br/>
+  <%if params[:type] == "archive" || params[:type] == "archive_attachment" %>
+    <div id="agent_modified_review" class="field">
+      <strong>Reason for archive:</strong><br/>
+      <%= f.text_area :notes ,:class=>"ckeditor"%>
+    </div>
+  <%end%>
+
+	<br/>
+  <div class="actions">
+    <% if @review.ispublished && !(current_user.is? :jagent) %>
+      <%= link_to 'Unpublish',  admin_review_unpublished_path(@review.id) , :confirm => "This review will be removed from front end and will be send to archive" ,:method => :put ,:class => "btn btn-primary"%>
+    <% end %>
+    <%unless @review.ispublished || @review.archive%>
+      <%unless params[:type] == "archive" || params[:type] == "archive_attachment"%>
+        <% if current_user.is? :jagent %>
+          <%= f.submit 'Save', class: "btn btn-primary"%>
+        <% else %>
+          <%= f.submit 'Publish', class: "btn btn-primary"%>
+        <% end %>
+      <%end%>
+      <%unless params[:type] == "archive" || params[:type] == "archive_attachment" %>
+        <% if !(current_user.is? :jagent) %>
+        <%= link_to 'Archive', edit_admin_review_path(params[:id],:type => "archive"), class: "btn" ,style: "line-height: 18px;"if can? :edit, Review%>
+        <% end %>
+        <% unless @review.archive_attachment %>
+         <% unless  @review.file.file.nil? %>
+           <% if !(current_user.is? :jagent) %>
+            <%= link_to 'Archive Attachment', edit_admin_review_path(params[:id],:type => "archive_attachment"), class: "btn",style: "line-height: 18px;" if can? :edit, Review%>
+           <% end %>
+        <% end %>
+        <% end %>
+      <%else%>
+        <% if params[:type] == "archive" %>
+        <%= f.submit 'Archive', class: "btn"%>
+        <% else %>
+
+          <%= f.submit 'Archive-Attachment', class: "btn"%>
+        <%end%>
+      <%end%>
+   <%else%>
+       <%= f.submit 'Update', class: "btn btn-primary"%>
+   <%end%>
+
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+<div class="max-box">
+        
+        <%content_for :left do%>
+	<span class="span3">
+		 <%=render :partial=> "application/resource_left"%>
+	</span>
+<%end%>
+
+        
+        	<div class="form-box21">
+            <div class="heading2"><%= @resource_type.slug.titlecase %></div>
+            <% @resources.each do |resource| %>
+           <div class="information-new22">
+
+                  
+                   <div class="technology"><%=resource.title.titlecase%></div>
+                    <p><%=raw(resource.description)%></p>
+             </div>
+              <% end %>
+              <div class="clear"></div>
+  
+                
+            </div>
+            
+
+        </div>
+

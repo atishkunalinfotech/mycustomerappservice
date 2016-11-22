@@ -1,0 +1,123 @@
+<br/><br/>
+
+<h1>Totals : over a 12 month period</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Total Reviews</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Compliments</td>
+			<td><%= @compliments.count rescue nil%></td>
+		</tr>
+		<tr>
+			<td>Complaint</td> 
+			<td><%= @complaints.count rescue nil%></td>
+		</tr>
+		<tr>
+			<td><strong>Total</strong></td>
+			<td><%= @compliments.count + @complaints.count%></td>
+		</tr>
+
+	</tbody>
+</table>
+<%if @compliments.present? or @complaints.present?%>
+<br/><br/>
+<table >
+	<thead>
+		<tr>
+			<th>Nature of Compliment</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<% @n.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+
+	</tbody>
+</table>
+<br/><br/>
+
+
+<table>
+	<thead>
+		<tr>
+			<th>Nature of Complaints</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<% @n1.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+
+	</tbody>
+</table>
+<br/>
+<%if @total_converted.present?%>
+	<h4>Total Conversion from Complaints to Compliments</h4>
+	<table id="admin_review_xls" >
+		<thead>
+		  <tr>
+		        <th>Sr. No. </th>
+				<th width="10%">Date</th>
+				<th width="15%">Ticket Number</th>
+				<th width="10%">Review</th>
+				<th width="10%">Industry</th>
+				<th width="15%">Company</th>
+				<th width="15%">Town</th>
+				<th width="15%">Location</th>
+				<th width="15%">Person Responsible</th>
+				<th width="15%">Nature of Review</th>
+				<th width="15%">Message</th>
+				<th width="15%">Modified Review</th>
+				<th width="15%">Title</th>
+		        <th width="15%">Customer Name</th>
+		  </tr>
+		</thead>
+	    
+		<tbody>
+		  <% @total_converted.each_with_index.each do |review,i| %>
+		    <tr>
+		    <td><%= i+1%></td>
+					<td><%=review.date_time rescue nil %></td>
+					<td><%=review.ticket_number rescue nil %></td>
+					<td><%=review.review_type.titleize rescue nil %></td>
+					<td><%=review.industry.title.titleize rescue nil %></td>
+					<td><%=review.company.title.titleize rescue nil %></td>
+					<td><%=review.town.title.titleize rescue nil %></td>
+					<td><%=review.location.title.titleize rescue nil %></td>
+					<td><%=review.Person_responsible rescue nil %></td>
+					<td><%=review.nature_of_review rescue nil %></td>
+					<td><%=review.message rescue nil %></td>
+					<td><%=review.modified_review rescue nil %></td>
+					<td><%=review.title.titleize rescue nil %></td>
+				    <td><%=review.try(:user).try(:full_name)%></td>
+
+		    </tr>
+		  <% end %>
+		</tbody>	
+	</table>
+	<br/><br/>
+<%end%>
+<br/>
+
+<h4>Total : Nature of Compliment(12 Months)</h4></br>
+<%= render :partial=>"common_compliment_reviews_type"%>
+
+<h4>Total : Nature of Complaints (12 Months)</h4></br>
+<%= render :partial=>"common_complaint_reviews_type"%>
+<%end%>

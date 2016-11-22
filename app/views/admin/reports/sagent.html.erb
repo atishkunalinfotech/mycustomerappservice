@@ -1,0 +1,30 @@
+<h4>All Senior Agents</h4>
+	<table id="customers">
+		<thead>
+		  <tr>
+		    <th width="15%">First Name</th>
+		    <th width="15%">Last Name</th>
+		    <th width="30%">Email</th>
+		    <th width="20%">Email Confirmation</th>
+		    <th width="20%">Preferred Alias</th>
+		    <th width="20%">Role</th>
+		    <th width="20%">Date Created</th>
+		  </tr>
+		</thead>
+
+		<tbody>
+		  <% @sagents.each do |user| %>
+		    <tr>
+		      <td><%=user.first_name rescue nil%></td>
+		      <td><%=user.last_name rescue nil%></td>
+		      <td><%=user.email rescue nil%></td>
+		      <td><%=user.confirmed_at.present? ? 'Confirmed' : 'Pending' rescue nil%></td>
+		      <td><%=user.preferred_alias rescue nil%></td>
+		    
+		      <td><%if user.role == "agent" %>SR Agent<%end%></td>
+		      <td><%=user.created_at.strftime("%d/%m/%Y") %></td>
+		    </tr>
+		  <% end %>
+		</tbody>
+	</table>
+<br/><br/>

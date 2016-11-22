@@ -1,0 +1,72 @@
+<table id="total_compliment">
+	<thead>
+		<tr>
+			<th>Industry <%= @industry.title %>: Total Reviews</th>
+			<th>Total</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Compliments</td>
+			<td><%= @compliments rescue nil%></td>
+		</tr>
+		<tr>
+			<td>Complaint</td>
+			<td><%= @complaints rescue nil%></td>
+		</tr>
+		<tr>
+			<td><strong>Total</strong></td>
+			<td><%= @complaints + @compliments%></td>
+		</tr>
+
+	</tbody>
+</table>
+
+<br/><br/>
+<table id="compliments">
+	<thead>
+		<tr>
+			<th>Industry <%= @industry.title %>: Nature of Compliment</th>
+			<th>Total</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<% @n.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+		
+
+	</tbody>
+</table>
+<br/><br/>
+<table>
+
+</table>
+
+
+<table id="complaints">
+	<thead>
+		<tr>
+			<th>Industry <%= @industry.title %>: Nature of Complaints</th>
+			<th>Total</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<% @n1.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+
+	</tbody>
+</table>

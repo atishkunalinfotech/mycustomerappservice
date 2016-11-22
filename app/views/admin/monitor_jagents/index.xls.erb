@@ -1,0 +1,47 @@
+<h2>All Reviews</h2>
+<table id="monitor" cellpadding=10>
+	<thead>
+	<tr>
+		<th>Sr. No.</th>
+		<th>Review</th> 
+		<th>Assignee</th>
+		<th>Ticket assigned to</th> 
+		<th>Last Assignee</th>
+		<th>Last Ticket assigned to</th> 
+		<th>Ticket Closed By Agent</th>
+		<th>Modified Review By Assignee</th>
+		<th>Modified Review By Assigned Agent</th>
+		<th>Published By</th>
+		<th>Status</th>
+		<th>Comment Status</th>
+		<th>Conversion Voted</th>
+		<th>Date</th>
+		<th>Time</th>
+		<th>Date Proposed</th>
+		<th>Date Completed</th>
+	</tr>
+	</thead>
+	<tbody>
+	<% @monitors.each.with_index(1) do |mon,index| %>
+	<tr>
+		<td><%= index %></td>
+		<td><%= link_to mon.review.ticket_number ,edit_admin_review_path(mon.review.id) rescue nil%></td>
+		<td><%= mon.review.agent.try(:preferred_alias) %></td>
+		<td><%= mon.review.jagent.try(:preferred_alias) %></td>
+		<td><%= mon.review.old_agent.try(:preferred_alias) %></td>
+		<td><%= mon.review.old_jagent.try(:preferred_alias) %></td>
+		<td><%= mon.ticked_closed_by_jagent? ? "Yes" : "No" rescue nil%></td>
+		<td><%= mon.assignee_modified? ? "Yes" : "No" rescue nil%></td>
+		<td><%= mon.assign_modified? ? "Yes" : "No" rescue nil%></td>
+		<td><%= mon.review.ispublished? ? mon.review.last_published_agent.preferred_alias : "No" rescue nil%></td>
+		<td><%= mon.status %></td>
+		<td><%= mon.comment_status %></td>
+		<td><%= mon.review.change_date? ? "Yes" : "No" %></td>
+		<td><%= mon.review.created_at.strftime("%d/%m/%Y") %></td>
+		<td><%= mon.review.created_at.strftime("%H:%M") %></td>
+		<td><%= mon.review.track_times.first.date_proposed.to_date.strftime("%d/%m/%Y") rescue nil %></td>
+		<td><%= mon.review.track_times.first.date_complete.to_date.strftime("%d/%m/%Y") rescue nil %></td>
+	</tr>
+	<% end %>
+</tbody>
+</table>

@@ -1,0 +1,97 @@
+      <%content_for :left do%>
+    <span class="span3">
+         <%=render :partial=> "application/my_account_left"%>
+    </span>
+<%end%>
+
+      <div class="poll-big">
+        <div class="heading2poll">Poll Results</div>
+         <p>You are welcome to share these findings to help drive improvement in your company/institution. However, we will be most grateful if you may reference customer feedback. We are also open to run polls of your interest. Please contact us for further information. Thank you.</p>
+            <div class="poll-box">
+
+           <div class="information-new">
+                  
+                 
+                  <div id="container" ></div>
+           </div>
+              <div class="clear"></div>
+           
+                
+            </div>
+       </div>
+
+
+
+
+<script>
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: '<%=@poll.title%>',
+                 style: {
+                        color: '#696969',
+                        fontSize: '20px',
+                        fontFamily: 'andlso'
+                    }
+            },
+            plotOptions: {
+            series: {
+                color: '#3d89fb'
+            }
+        },
+            xAxis: {
+                type: 'category',
+                labels: {
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'andlso'
+                    }
+                }
+            },
+            yAxis: {
+                allowDecimals:false,
+                min: 0,
+                title: {
+                    text: 'No. of Votes',
+                    style: {
+                        color: '#696969',
+                        fontSize: '13px',
+                        fontFamily: 'andlso'
+                    }
+                }
+            },
+             credits: {
+      enabled: false
+  },exporting: { enabled: false },
+            legend: {
+                enabled: false
+            },
+            series: [{
+                name: 'Polls',
+                fill: '#fbaf3d',
+                data: [
+						   <%@poll.options.each do |option|%>
+						     ['<%=option.answer%>',<%= option.results.count %>]
+                 <%if @poll.options.last != option%>,<%end%>
+                <%end%>],
+                dataLabels: {
+                    enabled: true,
+                    rotation: -90,
+                    color: '#FFFFFF',
+                    align: 'right',
+                    x: 4,
+                    y: 10,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif',
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }]
+        });
+    });
+    
+</script>

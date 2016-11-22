@@ -1,0 +1,84 @@
+
+
+<table>
+	<thead>
+		<tr>
+			<th>Industry <%= industry.title %>: Total Reviews</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Compliments :
+			<%= @compliments.count rescue nil%></td>
+		
+			<td>Complaint :
+			<%= @complaints.count rescue nil%></td>
+		
+			<td><strong>Total</strong>
+			<%= @total = @complaints.count + @compliments.count%></td>
+		</tr>
+
+	</tbody>
+</table>
+
+<br/>
+
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>Industry <%= industry.title rescue nil%> : Nature of Compliment</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<% @nature_of_compliments = [] %>
+		<% NatureOfReview.where("review_type = ?","compliment").pluck(:title).each do |r| %>
+			<% @nature_of_compliments << [r,Review.nature_count(r).where("industry_id = ?",industry.id).count] %>
+		<% end %>
+		<% n = @nature_of_compliments %>
+		<% n = Hash[*n.flatten] %>
+		<% n.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+		
+
+	</tbody>
+</table>
+<br/>
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th>Industry <%= industry.title rescue nil%> : Nature of Complaints</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+			<% @nature_of_complaints = [] %>
+		<% NatureOfReview.where("review_type = ?","complaint").pluck(:title).each do |r| %>
+			<% @nature_of_complaints << [r,Review.nature_count(r).where("industry_id = ?",industry.id).count] %>
+		<% end %>
+		<% n = @nature_of_complaints %>
+		<% n = Hash[*n.flatten] %>
+		<% n.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+<% @ncp = []%>
+<% NatureOfReview.where("review_type = ?","compliment").pluck(:title).each do |r| %>
+  <% @ncp << Review.nature_count(r).where("industry_id = ?",industry.id) %>
+<% end %>
+<% @ncs = []%>
+<% NatureOfReview.where("review_type = ?","complaint").pluck(:title).each do |r| %>
+  <% @ncs << Review.nature_count(r).where("industry_id = ?",industry.id) %>
+<% end %>

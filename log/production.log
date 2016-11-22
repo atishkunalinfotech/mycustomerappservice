@@ -1,0 +1,1191 @@
+I, [2015-03-11T19:23:34.930825 #6729]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-11 19:23:34 +0530
+I, [2015-03-11T19:23:35.237007 #6729]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-11T19:23:35.417136 #6729]  INFO -- :   Rendered application/_my_account_left.html.erb (54.9ms)
+I, [2015-03-11T19:23:35.637047 #6729]  INFO -- :   Rendered reviews/_reviews.html.erb (182.0ms)
+I, [2015-03-11T19:23:35.657136 #6729]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.5ms)
+I, [2015-03-11T19:23:35.657363 #6729]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (297.6ms)
+I, [2015-03-11T19:26:54.141630 #6729]  INFO -- : Completed 401 Unauthorized in 198904ms
+I, [2015-03-11T19:29:11.335481 #7162]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-11 19:29:11 +0530
+I, [2015-03-11T19:29:11.488436 #7162]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-11T19:29:11.548460 #7162]  INFO -- :   Rendered application/_my_account_left.html.erb (1.9ms)
+I, [2015-03-11T19:29:11.742023 #7162]  INFO -- :   Rendered reviews/_reviews.html.erb (188.1ms)
+I, [2015-03-11T19:29:11.761798 #7162]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.4ms)
+I, [2015-03-11T19:29:11.761983 #7162]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (217.1ms)
+I, [2015-03-11T19:48:56.576521 #7647]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-11 19:48:56 +0530
+I, [2015-03-11T19:48:56.697286 #7647]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-11T19:48:56.757441 #7647]  INFO -- :   Rendered application/_my_account_left.html.erb (2.0ms)
+I, [2015-03-11T19:48:56.951756 #7647]  INFO -- :   Rendered reviews/_reviews.html.erb (188.5ms)
+I, [2015-03-11T19:48:56.954780 #7647]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-11T19:48:56.954950 #7647]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (201.1ms)
+I, [2015-03-11T19:51:33.973090 #7676]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-11 19:51:33 +0530
+I, [2015-03-11T19:51:34.044131 #7676]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-11T19:51:34.153354 #7676]  INFO -- :   Rendered application/_my_account_left.html.erb (1.6ms)
+I, [2015-03-11T19:51:34.285389 #7676]  INFO -- :   Rendered reviews/_reviews.html.erb (127.0ms)
+I, [2015-03-11T19:51:34.288491 #7676]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.1ms)
+I, [2015-03-11T19:51:34.288664 #7676]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (138.3ms)
+I, [2015-03-11T19:54:05.901873 #7706]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-11 19:54:05 +0530
+I, [2015-03-11T19:54:05.972997 #7706]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-11T19:54:06.079964 #7706]  INFO -- :   Rendered application/_my_account_left.html.erb (1.7ms)
+I, [2015-03-11T19:54:06.213178 #7706]  INFO -- :   Rendered reviews/_reviews.html.erb (127.8ms)
+I, [2015-03-11T19:54:06.216276 #7706]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.1ms)
+I, [2015-03-11T19:54:06.216433 #7706]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (139.6ms)
+I, [2015-03-11T19:54:06.358332 #7706]  INFO -- :   Rendered application/_header.html.erb (8.0ms)
+I, [2015-03-11T19:54:06.388191 #7706]  INFO -- :   Rendered application/_navigation.html.erb (27.8ms)
+I, [2015-03-11T19:54:06.388841 #7706]  INFO -- : Completed 200 OK in 416ms (Views: 302.1ms | ActiveRecord: 13.2ms)
+I, [2015-03-11T19:54:06.417418 #7706]  INFO -- : Started GET "/assets/application-de22468966a859d9fdb7ccfbae57f9ba.css" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-11T19:54:06.436589 #7706]  INFO -- : Started GET "/assets/application-d5bef47d71f1b015755c2a3904007bba.js" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-11T19:54:06.561313 #7706]  INFO -- : Started GET "/assets/fbicon-eaf0401f16f471b8948d8280a8b45d53.png" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-11T19:54:06.572362 #7706]  INFO -- : Started GET "/assets/home-ef3363c0d609838d15a9f6c43dc40b5d.png" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-11T19:54:06.584360 #7706]  INFO -- : Started GET "/assets/thumbsU-aa416cde448aeb4d1510461dc90e60c9.png" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-11T19:54:06.591144 #7706]  INFO -- : Started GET "/assets/logo-b29599ef229e1629ee0f1b8fc1b63ef3.png" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-11T19:54:06.593370 #7706]  INFO -- : Started GET "/assets/thumbsD-fbc1103270d4f12f00eadb848ee293b3.png" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-11T19:54:06.596984 #7706]  INFO -- : Started GET "/assets/g_icon-723577d6793c2b0330310857e57ad705.gif" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-11T19:54:06.599319 #7706]  INFO -- : Started GET "/assets/twicon-68cf36e41d5ff93ac0863c805f3fbe72.png" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-11T19:54:06.608955 #7706]  INFO -- : Started GET "/assets/comment-b7cefb05a81eab6eb726c41939173b22.png" for 127.0.0.1 at 2015-03-11 19:54:06 +0530
+I, [2015-03-14T16:09:56.840230 #4289]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-14 16:09:56 +0530
+I, [2015-03-14T16:09:56.925103 #4289]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-14T16:09:57.099942 #4289]  INFO -- :   Rendered application/_my_account_left.html.erb (94.0ms)
+I, [2015-03-14T16:09:57.228683 #4289]  INFO -- :   Rendered reviews/_reviews.html.erb (93.0ms)
+I, [2015-03-14T16:09:57.309004 #4289]  INFO -- :   Rendered application/_ads_and_poll.html.erb (78.1ms)
+I, [2015-03-14T16:09:57.309291 #4289]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (304.8ms)
+I, [2015-03-14T16:12:42.777726 #4315]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-14 16:12:42 +0530
+I, [2015-03-14T16:12:43.106423 #4315]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-14T16:12:43.418225 #4315]  INFO -- :   Rendered application/_my_account_left.html.erb (103.5ms)
+I, [2015-03-14T16:12:43.519403 #4315]  INFO -- :   Rendered reviews/_reviews.html.erb (91.1ms)
+I, [2015-03-14T16:12:43.599199 #4315]  INFO -- :   Rendered application/_ads_and_poll.html.erb (77.6ms)
+I, [2015-03-14T16:12:43.599373 #4315]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (287.0ms)
+I, [2015-03-14T16:14:51.416111 #4315]  INFO -- :   Rendered application/_header.html.erb (29.1ms)
+I, [2015-03-14T16:14:51.460372 #4315]  INFO -- :   Rendered application/_navigation.html.erb (41.8ms)
+I, [2015-03-14T16:14:51.460948 #4315]  INFO -- : Completed 200 OK in 128354ms (Views: 128149.3ms | ActiveRecord: 112.4ms)
+I, [2015-03-14T16:14:51.462245 #4315]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-14 16:14:51 +0530
+I, [2015-03-14T16:14:51.465921 #4315]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-14T16:14:51.474644 #4315]  INFO -- :   Rendered application/_my_account_left.html.erb (1.7ms)
+I, [2015-03-14T16:14:51.489676 #4315]  INFO -- :   Rendered reviews/_reviews.html.erb (13.8ms)
+I, [2015-03-14T16:14:51.548194 #4315]  INFO -- :   Rendered application/_ads_and_poll.html.erb (58.2ms)
+I, [2015-03-14T16:14:51.548422 #4315]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (75.7ms)
+I, [2015-03-14T16:14:51.550386 #4315]  INFO -- :   Rendered application/_header.html.erb (0.8ms)
+I, [2015-03-14T16:14:51.555455 #4315]  INFO -- :   Rendered application/_navigation.html.erb (4.7ms)
+I, [2015-03-14T16:14:51.556189 #4315]  INFO -- : Completed 200 OK in 90ms (Views: 82.1ms | ActiveRecord: 2.9ms)
+I, [2015-03-14T16:14:51.622056 #4315]  INFO -- : Started GET "/assets/application-de22468966a859d9fdb7ccfbae57f9ba.css" for 127.0.0.1 at 2015-03-14 16:14:51 +0530
+I, [2015-03-14T16:14:51.790016 #4315]  INFO -- : Started GET "/assets/application-3fb2282f23c52bd559cfaed1109d66e7.js" for 127.0.0.1 at 2015-03-14 16:14:51 +0530
+I, [2015-03-14T16:14:51.958337 #4315]  INFO -- : Started GET "/assets/fbicon-eaf0401f16f471b8948d8280a8b45d53.png" for 127.0.0.1 at 2015-03-14 16:14:51 +0530
+I, [2015-03-14T16:14:51.968302 #4315]  INFO -- : Started GET "/assets/logo-b29599ef229e1629ee0f1b8fc1b63ef3.png" for 127.0.0.1 at 2015-03-14 16:14:51 +0530
+I, [2015-03-14T16:14:51.972230 #4315]  INFO -- : Started GET "/assets/g_icon-723577d6793c2b0330310857e57ad705.gif" for 127.0.0.1 at 2015-03-14 16:14:51 +0530
+I, [2015-03-14T16:14:51.976109 #4315]  INFO -- : Started GET "/assets/twicon-68cf36e41d5ff93ac0863c805f3fbe72.png" for 127.0.0.1 at 2015-03-14 16:14:51 +0530
+I, [2015-03-14T16:14:51.988577 #4315]  INFO -- : Started GET "/assets/thumbsU-aa416cde448aeb4d1510461dc90e60c9.png" for 127.0.0.1 at 2015-03-14 16:14:51 +0530
+I, [2015-03-14T16:14:52.004601 #4315]  INFO -- : Started GET "/assets/thumbsD-fbc1103270d4f12f00eadb848ee293b3.png" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.010767 #4315]  INFO -- : Started GET "/assets/comment-b7cefb05a81eab6eb726c41939173b22.png" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.020780 #4315]  INFO -- : Started GET "/assets/home-ef3363c0d609838d15a9f6c43dc40b5d.png" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.185100 #4315]  INFO -- : Started GET "/assets/nav_bg.png" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.249345 #4315]  INFO -- : Started GET "/assets/nav_bg_2.gif" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.252779 #4315]  INFO -- : Started GET "/assets/ribbon.png" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.255698 #4315]  INFO -- : Started GET "/assets/repeat_img.gif" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.301254 #4315]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.304986 #4315]  INFO -- : Processing by PagesController#index as 
+I, [2015-03-14T16:14:52.305109 #4315]  INFO -- :   Parameters: {"slug"=>"favicon"}
+I, [2015-03-14T16:14:52.406678 #4315]  INFO -- : Redirected to http://localhost:3001/
+I, [2015-03-14T16:14:52.406921 #4315]  INFO -- : Completed 302 Found in 102ms (ActiveRecord: 94.5ms)
+I, [2015-03-14T16:14:52.448543 #4315]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.452073 #4315]  INFO -- : Processing by PagesController#index as 
+I, [2015-03-14T16:14:52.452179 #4315]  INFO -- :   Parameters: {"slug"=>"favicon"}
+I, [2015-03-14T16:14:52.457748 #4315]  INFO -- : Redirected to http://localhost:3001/
+I, [2015-03-14T16:14:52.458005 #4315]  INFO -- : Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+I, [2015-03-14T16:14:52.471905 #4315]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-14 16:14:52 +0530
+I, [2015-03-14T16:14:52.473058 #4315]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-14T16:14:52.482627 #4315]  INFO -- :   Rendered application/_my_account_left.html.erb (2.1ms)
+I, [2015-03-14T16:14:52.496741 #4315]  INFO -- :   Rendered reviews/_reviews.html.erb (13.1ms)
+I, [2015-03-14T16:14:52.499655 #4315]  INFO -- :   Rendered application/_ads_and_poll.html.erb (2.6ms)
+I, [2015-03-14T16:14:52.499814 #4315]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (19.6ms)
+I, [2015-03-14T16:14:52.501472 #4315]  INFO -- :   Rendered application/_header.html.erb (0.7ms)
+I, [2015-03-14T16:14:52.557303 #4315]  INFO -- :   Rendered application/_navigation.html.erb (4.7ms)
+I, [2015-03-14T16:14:52.557775 #4315]  INFO -- : Completed 200 OK in 85ms (Views: 76.5ms | ActiveRecord: 2.2ms)
+I, [2015-03-14T16:16:06.199824 #4521]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-14 16:16:06 +0530
+I, [2015-03-14T16:16:06.326592 #4521]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-14T16:16:06.566155 #4521]  INFO -- :   Rendered application/_my_account_left.html.erb (97.8ms)
+I, [2015-03-14T16:16:06.652689 #4521]  INFO -- :   Rendered reviews/_reviews.html.erb (81.4ms)
+I, [2015-03-14T16:16:06.822810 #4521]  INFO -- :   Rendered application/_ads_and_poll.html.erb (167.7ms)
+I, [2015-03-14T16:16:06.823084 #4521]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (356.4ms)
+I, [2015-03-14T16:16:06.918401 #4521]  INFO -- :   Rendered application/_header.html.erb (7.6ms)
+I, [2015-03-14T16:16:06.947680 #4521]  INFO -- :   Rendered application/_navigation.html.erb (27.2ms)
+I, [2015-03-14T16:16:06.948275 #4521]  INFO -- : Completed 200 OK in 621ms (Views: 495.9ms | ActiveRecord: 17.7ms)
+I, [2015-03-14T16:16:06.981050 #4521]  INFO -- : Started GET "/assets/application-de22468966a859d9fdb7ccfbae57f9ba.css" for 127.0.0.1 at 2015-03-14 16:16:06 +0530
+I, [2015-03-14T16:16:07.051801 #4521]  INFO -- : Started GET "/assets/application-3fb2282f23c52bd559cfaed1109d66e7.js" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.271759 #4521]  INFO -- : Started GET "/assets/logo-b29599ef229e1629ee0f1b8fc1b63ef3.png" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.276294 #4521]  INFO -- : Started GET "/assets/fbicon-eaf0401f16f471b8948d8280a8b45d53.png" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.289083 #4521]  INFO -- : Started GET "/assets/home-ef3363c0d609838d15a9f6c43dc40b5d.png" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.292118 #4521]  INFO -- : Started GET "/assets/thumbsU-aa416cde448aeb4d1510461dc90e60c9.png" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.294153 #4521]  INFO -- : Started GET "/assets/thumbsD-fbc1103270d4f12f00eadb848ee293b3.png" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.296051 #4521]  INFO -- : Started GET "/assets/g_icon-723577d6793c2b0330310857e57ad705.gif" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.299605 #4521]  INFO -- : Started GET "/assets/comment-b7cefb05a81eab6eb726c41939173b22.png" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.302386 #4521]  INFO -- : Started GET "/assets/twicon-68cf36e41d5ff93ac0863c805f3fbe72.png" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.322018 #4521]  INFO -- : Started GET "/assets/nav_bg.png" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.329901 #4521]  INFO -- : Started GET "/assets/nav_bg_2.gif" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.332560 #4521]  INFO -- : Started GET "/assets/repeat_img.gif" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:07.335092 #4521]  INFO -- : Started GET "/assets/ribbon.png" for 127.0.0.1 at 2015-03-14 16:16:07 +0530
+I, [2015-03-14T16:16:11.771488 #4521]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2015-03-14 16:16:11 +0530
+I, [2015-03-14T16:16:11.775202 #4521]  INFO -- : Processing by AdminController#index as HTML
+I, [2015-03-14T16:16:11.977393 #4521]  INFO -- :   Rendered admin/index.html.erb within layouts/admin (161.1ms)
+I, [2015-03-14T16:16:11.993215 #4521]  INFO -- :   Rendered admin/common/_header.html.erb (0.8ms)
+I, [2015-03-14T16:16:12.015560 #4521]  INFO -- :   Rendered admin/common/_sidebar.html.erb (15.0ms)
+I, [2015-03-14T16:16:12.017553 #4521]  INFO -- :   Rendered admin/common/_breadcrumb.html.erb (0.8ms)
+I, [2015-03-14T16:16:12.019052 #4521]  INFO -- :   Rendered admin/common/_page_header.html.erb (0.4ms)
+I, [2015-03-14T16:16:12.020017 #4521]  INFO -- : Completed 200 OK in 245ms (Views: 199.3ms | ActiveRecord: 40.5ms)
+I, [2015-03-14T16:16:12.042050 #4521]  INFO -- : Started GET "/assets/admin/bootstrap.min.css" for 127.0.0.1 at 2015-03-14 16:16:12 +0530
+I, [2015-03-14T16:16:14.007598 #4521]  INFO -- : Started GET "/assets/admin/bootstrap-responsive.min.css" for 127.0.0.1 at 2015-03-14 16:16:14 +0530
+I, [2015-03-14T16:16:14.180346 #4521]  INFO -- : Started GET "/assets/admin/admin.css" for 127.0.0.1 at 2015-03-14 16:16:14 +0530
+I, [2015-03-14T16:16:14.614219 #4521]  INFO -- : Started GET "/assets/jquery.ui.core.css" for 127.0.0.1 at 2015-03-14 16:16:14 +0530
+I, [2015-03-14T16:16:14.654375 #4521]  INFO -- : Started GET "/assets/jquery.js" for 127.0.0.1 at 2015-03-14 16:16:14 +0530
+I, [2015-03-14T16:16:18.293528 #4521]  INFO -- : Started GET "/assets/admin/font-awesome.min.css" for 127.0.0.1 at 2015-03-14 16:16:18 +0530
+I, [2015-03-14T16:16:18.457619 #4521]  INFO -- : Started GET "/assets/jquery.ui.theme.css" for 127.0.0.1 at 2015-03-14 16:16:18 +0530
+I, [2015-03-14T16:16:18.575120 #4521]  INFO -- : Started GET "/assets/jquery.ui.datepicker.css" for 127.0.0.1 at 2015-03-14 16:16:18 +0530
+I, [2015-03-14T16:16:18.708474 #4521]  INFO -- : Started GET "/assets/admin/ace.min.css" for 127.0.0.1 at 2015-03-14 16:16:18 +0530
+I, [2015-03-14T16:16:22.239005 #4521]  INFO -- : Started GET "/assets/admin/ace-responsive.min.css" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.363647 #4521]  INFO -- : Started GET "/assets/admin/ace-skins.min.css" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.632123 #4521]  INFO -- : Started GET "/assets/admin/grid.css" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.644638 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.682102 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.690467 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.695888 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.700946 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.706187 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.726907 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.751981 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.775544 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.788453 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.819366 #4521]  INFO -- : Started GET "/assets/fontawesome-webfont.woff?v=3.1.0" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.824243 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.834418 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.839424 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.844158 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.880883 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.978141 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:22.991046 #4521]  INFO -- : Started GET "/assets/admin/addresses.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:22 +0530
+I, [2015-03-14T16:16:23.105820 #4521]  INFO -- : Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:23 +0530
+I, [2015-03-14T16:16:23.129084 #4521]  INFO -- : Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2015-03-14 16:16:23 +0530
+I, [2015-03-14T16:16:23.164218 #4521]  INFO -- : Started GET "/assets/admin/ace-elements.min.js" for 127.0.0.1 at 2015-03-14 16:16:23 +0530
+I, [2015-03-14T16:16:23.433542 #4521]  INFO -- : Started GET "/assets/admin/ace.min.js" for 127.0.0.1 at 2015-03-14 16:16:23 +0530
+I, [2015-03-14T16:16:23.594504 #4521]  INFO -- : Started GET "/assets/admin/jquery.dataTables.bootstrap.js" for 127.0.0.1 at 2015-03-14 16:16:23 +0530
+I, [2015-03-14T16:16:23.701550 #4521]  INFO -- : Started GET "/assets/application-3fb2282f23c52bd559cfaed1109d66e7.js" for 127.0.0.1 at 2015-03-14 16:16:23 +0530
+I, [2015-03-14T16:16:24.056079 #4521]  INFO -- : Started GET "/assets/dataTables/sort_asc-50f73958e238e4d603fb8e7b6b6ded2c.png" for 127.0.0.1 at 2015-03-14 16:16:24 +0530
+I, [2015-03-14T16:16:24.065159 #4521]  INFO -- : Started GET "/assets/dataTables/sort_both-9026485f5d12f46ed1b5356754a1210c.png" for 127.0.0.1 at 2015-03-14 16:16:24 +0530
+I, [2015-03-14T16:17:12.796902 #4521]  INFO -- : Started GET "/admin/agents" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.800765 #4521]  INFO -- : Processing by Admin::AgentsController#index as HTML
+I, [2015-03-14T16:17:12.830311 #4521]  INFO -- :   Rendered admin/agents/index.html.erb within layouts/admin (9.8ms)
+I, [2015-03-14T16:17:12.830944 #4521]  INFO -- :   Rendered admin/common/_header.html.erb (0.1ms)
+I, [2015-03-14T16:17:12.843063 #4521]  INFO -- :   Rendered admin/common/_sidebar.html.erb (11.8ms)
+I, [2015-03-14T16:17:12.843463 #4521]  INFO -- :   Rendered admin/common/_breadcrumb.html.erb (0.1ms)
+I, [2015-03-14T16:17:12.843683 #4521]  INFO -- :   Rendered admin/common/_page_header.html.erb (0.0ms)
+I, [2015-03-14T16:17:12.844501 #4521]  INFO -- : Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.7ms)
+I, [2015-03-14T16:17:12.876424 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.879791 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.887330 #4521]  INFO -- : Started GET "/assets/admin/addresses.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.888570 #4521]  INFO -- : Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.889671 #4521]  INFO -- : Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.900029 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.904956 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.912850 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.913943 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.918347 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.921122 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.924014 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.926767 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.929710 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.930961 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.931950 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.933009 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.934039 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:12.935199 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:12 +0530
+I, [2015-03-14T16:17:14.267087 #4521]  INFO -- : Started GET "/admin/agents/new" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.271014 #4521]  INFO -- : Processing by Admin::AgentsController#new as HTML
+I, [2015-03-14T16:17:14.293798 #4521]  INFO -- :   Rendered admin/agents/_form.html.erb (18.2ms)
+I, [2015-03-14T16:17:14.293967 #4521]  INFO -- :   Rendered admin/agents/new.html.erb within layouts/admin (19.7ms)
+I, [2015-03-14T16:17:14.294565 #4521]  INFO -- :   Rendered admin/common/_header.html.erb (0.2ms)
+I, [2015-03-14T16:17:14.307192 #4521]  INFO -- :   Rendered admin/common/_sidebar.html.erb (12.4ms)
+I, [2015-03-14T16:17:14.307530 #4521]  INFO -- :   Rendered admin/common/_breadcrumb.html.erb (0.1ms)
+I, [2015-03-14T16:17:14.307743 #4521]  INFO -- :   Rendered admin/common/_page_header.html.erb (0.0ms)
+I, [2015-03-14T16:17:14.308549 #4521]  INFO -- : Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.1ms)
+I, [2015-03-14T16:17:14.327799 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.335467 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.341079 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.342146 #4521]  INFO -- : Started GET "/assets/admin/addresses.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.343817 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.347309 #4521]  INFO -- : Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.348581 #4521]  INFO -- : Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.350092 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.360870 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.365563 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.366953 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.368099 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.373507 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.374769 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.403072 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.408447 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.411537 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.412772 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:14.415333 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:14 +0530
+I, [2015-03-14T16:17:21.532151 #4521]  INFO -- : Started POST "/admin/agents.agent" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.533684 #4521]  INFO -- : Processing by Admin::AgentsController#create as 
+I, [2015-03-14T16:17:21.544101 #4521]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"TFRxnCgPgrIQqXj+5uovLE2Qri/vF3SzrsG3fXndLy0=", "agent"=>{"first_name"=>"ankit", "last_name"=>"chachada", "preferred_alias"=>"ankits", "role"=>"agent", "email"=>"ankit@kunalinfotech.netf"}, "commit"=>"Save Agent"}
+I, [2015-03-14T16:17:21.822364 #4521]  INFO -- :   Rendered admin/agents/_form.html.erb (5.4ms)
+I, [2015-03-14T16:17:21.822540 #4521]  INFO -- :   Rendered admin/agents/new.html.erb within layouts/admin (9.1ms)
+I, [2015-03-14T16:17:21.826378 #4521]  INFO -- :   Rendered admin/common/_header.html.erb (0.6ms)
+I, [2015-03-14T16:17:21.844600 #4521]  INFO -- :   Rendered admin/common/_sidebar.html.erb (15.2ms)
+I, [2015-03-14T16:17:21.848368 #4521]  INFO -- :   Rendered admin/common/_breadcrumb.html.erb (0.7ms)
+I, [2015-03-14T16:17:21.852133 #4521]  INFO -- :   Rendered admin/common/_page_header.html.erb (0.5ms)
+I, [2015-03-14T16:17:21.853129 #4521]  INFO -- : Completed 200 OK in 309ms (Views: 44.1ms | ActiveRecord: 70.8ms)
+I, [2015-03-14T16:17:21.877491 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.883475 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.891767 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.894714 #4521]  INFO -- : Started GET "/assets/admin/addresses.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.897644 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.898930 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.899926 #4521]  INFO -- : Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.901002 #4521]  INFO -- : Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.926563 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.927988 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.929285 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.930658 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.936713 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.942626 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.944008 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.945195 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.946378 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.947442 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:21.948504 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:21 +0530
+I, [2015-03-14T16:17:29.885323 #4521]  INFO -- : Started POST "/admin/agents.agent" for 127.0.0.1 at 2015-03-14 16:17:29 +0530
+I, [2015-03-14T16:17:29.886569 #4521]  INFO -- : Processing by Admin::AgentsController#create as 
+I, [2015-03-14T16:17:29.886687 #4521]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"TFRxnCgPgrIQqXj+5uovLE2Qri/vF3SzrsG3fXndLy0=", "agent"=>{"first_name"=>"ankit", "last_name"=>"chachada", "preferred_alias"=>"ankitsg", "role"=>"agent", "email"=>"ankit@kunalinfotech.netf"}, "commit"=>"Save Agent"}
+I, [2015-03-14T16:17:30.787139 #4521]  INFO -- :   Rendered devise/mailer/confirmation_instructions.html.erb (1.0ms)
+I, [2015-03-14T16:17:37.231315 #4521]  INFO -- : 
+Sent mail to ankit@kunalinfotech.netf (6441.4ms)
+I, [2015-03-14T16:17:37.294838 #4521]  INFO -- :   Rendered agent_mailer/agent_mail.html.erb (0.6ms)
+I, [2015-03-14T16:17:42.819706 #4521]  INFO -- : Redirected to http://localhost:3001/admin/agents/13
+I, [2015-03-14T16:17:42.819974 #4521]  INFO -- : Completed 302 Found in 12933ms (ActiveRecord: 88.5ms)
+I, [2015-03-14T16:17:42.839857 #4521]  INFO -- : Started GET "/admin/agents/13" for 127.0.0.1 at 2015-03-14 16:17:42 +0530
+I, [2015-03-14T16:17:42.841555 #4521]  INFO -- : Processing by Admin::AgentsController#show as HTML
+I, [2015-03-14T16:17:42.841673 #4521]  INFO -- :   Parameters: {"id"=>"13"}
+I, [2015-03-14T16:17:42.858063 #4521]  INFO -- :   Rendered admin/agents/show.html.erb within layouts/admin (2.4ms)
+I, [2015-03-14T16:17:42.858642 #4521]  INFO -- :   Rendered admin/common/_header.html.erb (0.1ms)
+I, [2015-03-14T16:17:42.872269 #4521]  INFO -- :   Rendered admin/common/_sidebar.html.erb (13.3ms)
+I, [2015-03-14T16:17:42.872678 #4521]  INFO -- :   Rendered admin/common/_breadcrumb.html.erb (0.1ms)
+I, [2015-03-14T16:17:42.872975 #4521]  INFO -- :   Rendered admin/common/_page_header.html.erb (0.1ms)
+I, [2015-03-14T16:17:42.873943 #4521]  INFO -- : Completed 200 OK in 32ms (Views: 28.4ms | ActiveRecord: 0.8ms)
+I, [2015-03-14T16:17:42.969836 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:42 +0530
+I, [2015-03-14T16:17:42.978120 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:42 +0530
+I, [2015-03-14T16:17:42.979375 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:42 +0530
+I, [2015-03-14T16:17:42.982019 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:42 +0530
+I, [2015-03-14T16:17:42.990869 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:42 +0530
+I, [2015-03-14T16:17:42.998361 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:42 +0530
+I, [2015-03-14T16:17:42.999616 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:42 +0530
+I, [2015-03-14T16:17:43.000782 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.002034 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.003875 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.007369 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.008646 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.039565 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.044244 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.049200 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.051454 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.121360 #4521]  INFO -- : Started GET "/assets/admin/addresses.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.122754 #4521]  INFO -- : Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:17:43.123916 #4521]  INFO -- : Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-03-14 16:17:43 +0530
+I, [2015-03-14T16:18:41.016306 #4521]  INFO -- : Started GET "/admin/agents/13" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.017581 #4521]  INFO -- : Processing by Admin::AgentsController#show as HTML
+I, [2015-03-14T16:18:41.017681 #4521]  INFO -- :   Parameters: {"id"=>"13"}
+I, [2015-03-14T16:18:41.023164 #4521]  INFO -- :   Rendered admin/agents/show.html.erb within layouts/admin (1.9ms)
+I, [2015-03-14T16:18:41.023829 #4521]  INFO -- :   Rendered admin/common/_header.html.erb (0.1ms)
+I, [2015-03-14T16:18:41.036395 #4521]  INFO -- :   Rendered admin/common/_sidebar.html.erb (12.3ms)
+I, [2015-03-14T16:18:41.036754 #4521]  INFO -- :   Rendered admin/common/_breadcrumb.html.erb (0.1ms)
+I, [2015-03-14T16:18:41.036995 #4521]  INFO -- :   Rendered admin/common/_page_header.html.erb (0.0ms)
+I, [2015-03-14T16:18:41.037859 #4521]  INFO -- : Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+I, [2015-03-14T16:18:41.065298 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.070425 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.071694 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.079545 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.081190 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.082504 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.092724 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.094001 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.095043 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.096057 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.097054 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.106594 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.109690 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.111068 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.113498 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.114726 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.116053 #4521]  INFO -- : Started GET "/assets/admin/addresses.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.119807 #4521]  INFO -- : Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:41.147146 #4521]  INFO -- : Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:41 +0530
+I, [2015-03-14T16:18:43.437491 #4521]  INFO -- : Started GET "/admin" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.440760 #4521]  INFO -- : Processing by AdminController#index as HTML
+I, [2015-03-14T16:18:43.526637 #4521]  INFO -- :   Rendered admin/index.html.erb within layouts/admin (82.5ms)
+I, [2015-03-14T16:18:43.527231 #4521]  INFO -- :   Rendered admin/common/_header.html.erb (0.1ms)
+I, [2015-03-14T16:18:43.538539 #4521]  INFO -- :   Rendered admin/common/_sidebar.html.erb (11.1ms)
+I, [2015-03-14T16:18:43.538841 #4521]  INFO -- :   Rendered admin/common/_breadcrumb.html.erb (0.1ms)
+I, [2015-03-14T16:18:43.539051 #4521]  INFO -- :   Rendered admin/common/_page_header.html.erb (0.0ms)
+I, [2015-03-14T16:18:43.539739 #4521]  INFO -- : Completed 200 OK in 99ms (Views: 70.4ms | ActiveRecord: 25.7ms)
+I, [2015-03-14T16:18:43.623482 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.630134 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.633277 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.634918 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.636371 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.637758 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.645826 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.647335 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.649775 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.651396 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.652535 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.655519 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.687040 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.689952 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.708871 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.710073 #4521]  INFO -- : Started GET "/assets/admin/addresses.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.711025 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.711943 #4521]  INFO -- : Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:18:43.712940 #4521]  INFO -- : Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2015-03-14 16:18:43 +0530
+I, [2015-03-14T16:33:27.768573 #4521]  INFO -- : Started GET "/admin/agents" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.769933 #4521]  INFO -- : Processing by Admin::AgentsController#index as HTML
+I, [2015-03-14T16:33:27.801780 #4521]  INFO -- :   Rendered admin/agents/index.html.erb within layouts/admin (28.9ms)
+I, [2015-03-14T16:33:27.802332 #4521]  INFO -- :   Rendered admin/common/_header.html.erb (0.1ms)
+I, [2015-03-14T16:33:27.813820 #4521]  INFO -- :   Rendered admin/common/_sidebar.html.erb (11.3ms)
+I, [2015-03-14T16:33:27.814149 #4521]  INFO -- :   Rendered admin/common/_breadcrumb.html.erb (0.1ms)
+I, [2015-03-14T16:33:27.814364 #4521]  INFO -- :   Rendered admin/common/_page_header.html.erb (0.0ms)
+I, [2015-03-14T16:33:27.815128 #4521]  INFO -- : Completed 200 OK in 45ms (Views: 27.1ms | ActiveRecord: 15.7ms)
+I, [2015-03-14T16:33:27.878245 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.879517 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.887929 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.892765 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.968238 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.969718 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.970995 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.977934 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.980755 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.985510 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.986819 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.994749 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:27.996913 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:27 +0530
+I, [2015-03-14T16:33:28.006993 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:28 +0530
+I, [2015-03-14T16:33:28.022953 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:28 +0530
+I, [2015-03-14T16:33:28.029531 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:28 +0530
+I, [2015-03-14T16:33:28.030712 #4521]  INFO -- : Started GET "/assets/admin/addresses.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:28 +0530
+I, [2015-03-14T16:33:28.042712 #4521]  INFO -- : Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:28 +0530
+I, [2015-03-14T16:33:28.045765 #4521]  INFO -- : Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:28 +0530
+I, [2015-03-14T16:33:29.224910 #4521]  INFO -- : Started GET "/admin/agents/new" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.225881 #4521]  INFO -- : Processing by Admin::AgentsController#new as HTML
+I, [2015-03-14T16:33:29.231563 #4521]  INFO -- :   Rendered admin/agents/_form.html.erb (3.4ms)
+I, [2015-03-14T16:33:29.231738 #4521]  INFO -- :   Rendered admin/agents/new.html.erb within layouts/admin (3.8ms)
+I, [2015-03-14T16:33:29.232222 #4521]  INFO -- :   Rendered admin/common/_header.html.erb (0.1ms)
+I, [2015-03-14T16:33:29.245165 #4521]  INFO -- :   Rendered admin/common/_sidebar.html.erb (12.6ms)
+I, [2015-03-14T16:33:29.245648 #4521]  INFO -- :   Rendered admin/common/_breadcrumb.html.erb (0.1ms)
+I, [2015-03-14T16:33:29.245921 #4521]  INFO -- :   Rendered admin/common/_page_header.html.erb (0.0ms)
+I, [2015-03-14T16:33:29.246752 #4521]  INFO -- : Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+I, [2015-03-14T16:33:29.339385 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.342743 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.350060 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.352407 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.354200 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.363650 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.366837 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.368036 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.369073 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.370085 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.374500 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.375784 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.407013 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.409692 #4521]  INFO -- : Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.415526 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.bootstrap.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.418547 #4521]  INFO -- : Started GET "/assets/dataTables/jquery.dataTables.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.419931 #4521]  INFO -- : Started GET "/assets/admin/addresses.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.423521 #4521]  INFO -- : Started GET "/assets/admin/admin.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:29.424873 #4521]  INFO -- : Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-03-14 16:33:29 +0530
+I, [2015-03-14T16:33:38.876052 #4521]  INFO -- : Started POST "/admin/agents.agent" for 127.0.0.1 at 2015-03-14 16:33:38 +0530
+I, [2015-03-14T16:33:38.877445 #4521]  INFO -- : Processing by Admin::AgentsController#create as 
+I, [2015-03-14T16:33:38.877562 #4521]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"TFRxnCgPgrIQqXj+5uovLE2Qri/vF3SzrsG3fXndLy0=", "agent"=>{"first_name"=>"ankit", "last_name"=>"chachada", "preferred_alias"=>"testf", "role"=>"agent", "email"=>"ankit@kunalinfotech.netfe"}, "commit"=>"Save Agent"}
+I, [2015-03-14T16:33:39.006537 #4521]  INFO -- :   Rendered devise/mailer/confirmation_instructions.html.erb (0.6ms)
+I, [2015-03-14T16:33:44.513137 #4521]  INFO -- : 
+Sent mail to ankit@kunalinfotech.netfe (5504.6ms)
+I, [2015-03-14T16:33:44.556909 #4521]  INFO -- :   Rendered agent_mailer/agent_mail.html.erb (0.2ms)
+I, [2015-03-14T16:33:50.208032 #4521]  INFO -- : Redirected to http://localhost:3001/admin/agents/14
+I, [2015-03-14T16:33:50.208424 #4521]  INFO -- : Completed 302 Found in 11331ms (ActiveRecord: 44.2ms)
+I, [2015-03-28T20:35:17.375732 #11536]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:35:17 +0530
+I, [2015-03-28T20:35:17.600127 #11536]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:35:17.697217 #11536]  INFO -- :   Rendered application/_my_account_left.html.erb (41.8ms)
+I, [2015-03-28T20:35:17.892058 #11536]  INFO -- :   Rendered reviews/_reviews.html.erb (193.5ms)
+I, [2015-03-28T20:35:17.895131 #11536]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-28T20:35:17.895306 #11536]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (241.2ms)
+I, [2015-03-28T20:35:18.226148 #11536]  INFO -- : Completed 500 Internal Server Error in 626ms
+F, [2015-03-28T20:35:18.229281 #11536] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___546488230_106364700'
+
+
+I, [2015-03-28T20:35:18.276703 #11536]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-03-28 20:35:18 +0530
+I, [2015-03-28T20:35:18.281015 #11536]  INFO -- : Processing by PagesController#index as 
+I, [2015-03-28T20:35:18.281174 #11536]  INFO -- :   Parameters: {"slug"=>"favicon"}
+I, [2015-03-28T20:35:18.291119 #11536]  INFO -- : Redirected to http://localhost:3000/
+I, [2015-03-28T20:35:18.291501 #11536]  INFO -- : Completed 302 Found in 10ms (ActiveRecord: 2.5ms)
+I, [2015-03-28T20:35:18.434806 #11536]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-03-28 20:35:18 +0530
+I, [2015-03-28T20:35:18.438363 #11536]  INFO -- : Processing by PagesController#index as 
+I, [2015-03-28T20:35:18.438462 #11536]  INFO -- :   Parameters: {"slug"=>"favicon"}
+I, [2015-03-28T20:35:18.442594 #11536]  INFO -- : Redirected to http://localhost:3000/
+I, [2015-03-28T20:35:18.442796 #11536]  INFO -- : Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+I, [2015-03-28T20:35:18.446708 #11536]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:35:18 +0530
+I, [2015-03-28T20:35:18.450299 #11536]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:35:18.455930 #11536]  INFO -- :   Rendered application/_my_account_left.html.erb (1.3ms)
+I, [2015-03-28T20:35:18.478466 #11536]  INFO -- :   Rendered reviews/_reviews.html.erb (21.9ms)
+I, [2015-03-28T20:35:18.478760 #11536]  INFO -- :   Rendered application/_ads_and_poll.html.erb (0.1ms)
+I, [2015-03-28T20:35:18.478906 #11536]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (24.4ms)
+I, [2015-03-28T20:35:18.529944 #11536]  INFO -- : Completed 500 Internal Server Error in 79ms
+F, [2015-03-28T20:35:18.533011 #11536] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___546488230_106364700'
+
+
+I, [2015-03-28T20:36:52.306564 #11553]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:36:52 +0530
+I, [2015-03-28T20:36:52.378248 #11553]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:36:52.485685 #11553]  INFO -- :   Rendered application/_my_account_left.html.erb (52.3ms)
+I, [2015-03-28T20:36:52.635866 #11553]  INFO -- :   Rendered reviews/_reviews.html.erb (148.9ms)
+I, [2015-03-28T20:36:52.639081 #11553]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.1ms)
+I, [2015-03-28T20:36:52.639250 #11553]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (207.4ms)
+I, [2015-03-28T20:36:52.700936 #11553]  INFO -- : Completed 500 Internal Server Error in 322ms
+F, [2015-03-28T20:36:52.703968 #11553] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__941100183_105053830'
+
+
+I, [2015-03-28T20:37:43.699345 #11553]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:37:43 +0530
+I, [2015-03-28T20:37:43.703340 #11553]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:37:43.712869 #11553]  INFO -- :   Rendered application/_my_account_left.html.erb (2.8ms)
+I, [2015-03-28T20:37:43.736536 #11553]  INFO -- :   Rendered reviews/_reviews.html.erb (22.8ms)
+I, [2015-03-28T20:37:43.736993 #11553]  INFO -- :   Rendered application/_ads_and_poll.html.erb (0.1ms)
+I, [2015-03-28T20:37:43.737226 #11553]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (27.5ms)
+I, [2015-03-28T20:37:43.844265 #11553]  INFO -- : Completed 500 Internal Server Error in 141ms
+F, [2015-03-28T20:37:43.847285 #11553] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__941100183_105053830'
+
+
+I, [2015-03-28T20:38:18.337571 #11577]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:38:18 +0530
+I, [2015-03-28T20:38:18.411023 #11577]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:38:18.496408 #11577]  INFO -- :   Rendered application/_my_account_left.html.erb (40.4ms)
+I, [2015-03-28T20:38:18.648770 #11577]  INFO -- :   Rendered reviews/_reviews.html.erb (151.0ms)
+I, [2015-03-28T20:38:18.651952 #11577]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-28T20:38:18.652157 #11577]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (197.6ms)
+I, [2015-03-28T20:38:18.832654 #11577]  INFO -- :   Rendered application/_header.html.erb (1.0ms)
+I, [2015-03-28T20:38:18.861606 #11577]  INFO -- :   Rendered application/_navigation.html.erb (26.9ms)
+I, [2015-03-28T20:38:18.862223 #11577]  INFO -- : Completed 200 OK in 451ms (Views: 398.1ms | ActiveRecord: 13.4ms)
+I, [2015-03-28T20:38:18.946384 #11577]  INFO -- : Started GET "/assets/style-5f1ac62eafbf13863c174d80acc51346.css" for 127.0.0.1 at 2015-03-28 20:38:18 +0530
+I, [2015-03-28T20:38:18.956650 #11577]  INFO -- : Started GET "/assets/responsive-nav-6fcbf8d2f52fc0a3b47498740e2183cf.css" for 127.0.0.1 at 2015-03-28 20:38:18 +0530
+I, [2015-03-28T20:38:18.962876 #11577]  INFO -- : Started GET "/assets/jquery.mCustomScrollbar.concat.min.js" for 127.0.0.1 at 2015-03-28 20:38:18 +0530
+I, [2015-03-28T20:38:19.739067 #11577]  INFO -- : Started GET "/assets/application-3fb2282f23c52bd559cfaed1109d66e7.js" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.872940 #11577]  INFO -- : Started GET "/assets/icon-tw.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.878356 #11577]  INFO -- : Started GET "/assets/compliment.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.885030 #11577]  INFO -- : Started GET "/assets/icon-gp.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.888552 #11577]  INFO -- : Started GET "/assets/xema-logo.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.891256 #11577]  INFO -- : Started GET "/assets/icon-fb.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.894229 #11577]  INFO -- : Started GET "/assets/search.jpg" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.908927 #11577]  INFO -- : Started GET "/assets/complaint.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.911801 #11577]  INFO -- : Started GET "/assets/green_star.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.914483 #11577]  INFO -- : Started GET "/assets/blank.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.916951 #11577]  INFO -- : Started GET "/assets/red_star.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:19.920569 #11577]  INFO -- : Started GET "/assets/fill.png" for 127.0.0.1 at 2015-03-28 20:38:19 +0530
+I, [2015-03-28T20:38:20.050447 #11577]  INFO -- : Started GET "/assets/logout-bg.jpg" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+I, [2015-03-28T20:38:20.058259 #11577]  INFO -- : Started GET "/assets/images/bg.png" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+F, [2015-03-28T20:38:20.071189 #11577] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg.png"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2015-03-28T20:38:20.082190 #11577]  INFO -- : Started GET "/assets/menu-hover.png" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+I, [2015-03-28T20:38:20.085303 #11577]  INFO -- : Started GET "/assets/border-right.png" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+I, [2015-03-28T20:38:20.088359 #11577]  INFO -- : Started GET "/assets/selected.png" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+I, [2015-03-28T20:38:20.091655 #11577]  INFO -- : Started GET "/assets/menu_bg.png" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+I, [2015-03-28T20:38:20.096892 #11577]  INFO -- : Started GET "/assets/table-bg.png" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+I, [2015-03-28T20:38:20.101924 #11577]  INFO -- : Started GET "/assets/fonts/corbel.ttf" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+I, [2015-03-28T20:38:20.105892 #11577]  INFO -- : Started GET "/assets/fonts/andalus.ttf" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+I, [2015-03-28T20:38:20.170481 #11577]  INFO -- : Started GET "/assets/none.png" for 127.0.0.1 at 2015-03-28 20:38:20 +0530
+I, [2015-03-28T20:40:00.297630 #11626]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:40:00 +0530
+I, [2015-03-28T20:40:00.369599 #11626]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:40:00.456550 #11626]  INFO -- :   Rendered application/_my_account_left.html.erb (40.7ms)
+I, [2015-03-28T20:40:00.607708 #11626]  INFO -- :   Rendered reviews/_reviews.html.erb (149.9ms)
+I, [2015-03-28T20:40:00.610790 #11626]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-28T20:40:00.610951 #11626]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (196.5ms)
+I, [2015-03-28T20:40:00.671073 #11626]  INFO -- : Completed 500 Internal Server Error in 301ms
+F, [2015-03-28T20:40:00.674195 #11626] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___492718850_96738300'
+
+
+I, [2015-03-28T20:42:36.279105 #11656]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:42:36 +0530
+I, [2015-03-28T20:42:36.353679 #11656]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:42:36.439487 #11656]  INFO -- :   Rendered application/_my_account_left.html.erb (41.4ms)
+I, [2015-03-28T20:42:36.592712 #11656]  INFO -- :   Rendered reviews/_reviews.html.erb (151.8ms)
+I, [2015-03-28T20:42:36.595887 #11656]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-28T20:42:36.596046 #11656]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (199.4ms)
+I, [2015-03-28T20:42:36.655770 #11656]  INFO -- : Completed 500 Internal Server Error in 302ms
+F, [2015-03-28T20:42:36.659012 #11656] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__742106398_105695810'
+
+
+I, [2015-03-28T20:43:20.453401 #11664]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:43:20 +0530
+I, [2015-03-28T20:43:20.526703 #11664]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:43:20.611714 #11664]  INFO -- :   Rendered application/_my_account_left.html.erb (41.2ms)
+I, [2015-03-28T20:43:20.762993 #11664]  INFO -- :   Rendered reviews/_reviews.html.erb (150.0ms)
+I, [2015-03-28T20:43:20.766078 #11664]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-28T20:43:20.766239 #11664]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (197.1ms)
+I, [2015-03-28T20:43:20.828360 #11664]  INFO -- : Completed 500 Internal Server Error in 301ms
+F, [2015-03-28T20:43:20.831384 #11664] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__346075080_110263700'
+
+
+I, [2015-03-28T20:43:37.218072 #11671]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:43:37 +0530
+I, [2015-03-28T20:43:37.292878 #11671]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:43:37.379251 #11671]  INFO -- :   Rendered application/_my_account_left.html.erb (41.8ms)
+I, [2015-03-28T20:43:37.533177 #11671]  INFO -- :   Rendered reviews/_reviews.html.erb (152.6ms)
+I, [2015-03-28T20:43:37.536291 #11671]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-28T20:43:37.536457 #11671]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (200.7ms)
+I, [2015-03-28T20:43:38.025994 #11671]  INFO -- :   Rendered application/_header.html.erb (1.2ms)
+I, [2015-03-28T20:43:38.053289 #11671]  INFO -- :   Rendered application/_navigation.html.erb (25.1ms)
+I, [2015-03-28T20:43:38.054182 #11671]  INFO -- : Completed 200 OK in 761ms (Views: 707.1ms | ActiveRecord: 14.9ms)
+I, [2015-03-28T20:43:38.084256 #11671]  INFO -- : Started GET "/assets/jquery.mCustomScrollbar-6a3b3b33d32714cc375a6f6786ee908b.css" for 127.0.0.1 at 2015-03-28 20:43:38 +0530
+I, [2015-03-28T20:43:38.107016 #11671]  INFO -- : Started GET "/assets/complaint.png" for 127.0.0.1 at 2015-03-28 20:43:38 +0530
+I, [2015-03-28T20:43:38.272498 #11671]  INFO -- : Started GET "/assets/images/bg.png" for 127.0.0.1 at 2015-03-28 20:43:38 +0530
+F, [2015-03-28T20:43:38.280695 #11671] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg.png"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2015-03-28T20:43:58.799278 #11680]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:43:58 +0530
+I, [2015-03-28T20:43:58.871939 #11680]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:43:58.956587 #11680]  INFO -- :   Rendered application/_my_account_left.html.erb (40.5ms)
+I, [2015-03-28T20:43:59.111195 #11680]  INFO -- :   Rendered reviews/_reviews.html.erb (152.9ms)
+I, [2015-03-28T20:43:59.116048 #11680]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.6ms)
+I, [2015-03-28T20:43:59.116284 #11680]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (201.6ms)
+I, [2015-03-28T20:43:59.607720 #11680]  INFO -- :   Rendered application/_header.html.erb (1.0ms)
+I, [2015-03-28T20:43:59.636920 #11680]  INFO -- :   Rendered application/_navigation.html.erb (27.1ms)
+I, [2015-03-28T20:43:59.637530 #11680]  INFO -- : Completed 200 OK in 765ms (Views: 711.4ms | ActiveRecord: 15.0ms)
+I, [2015-03-28T20:43:59.665567 #11680]  INFO -- : Started GET "/assets/jquery.mCustomScrollbar-539d142d4e94d8bee0b93034a5d1229d.css" for 127.0.0.1 at 2015-03-28 20:43:59 +0530
+I, [2015-03-28T20:43:59.841415 #11680]  INFO -- : Started GET "/assets/images/bg.png" for 127.0.0.1 at 2015-03-28 20:43:59 +0530
+F, [2015-03-28T20:43:59.848373 #11680] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg.png"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2015-03-28T20:43:59.871563 #11680]  INFO -- : Started GET "/assets/complaint.png" for 127.0.0.1 at 2015-03-28 20:43:59 +0530
+I, [2015-03-28T20:44:38.135485 #11689]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:44:38 +0530
+I, [2015-03-28T20:44:38.210708 #11689]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:44:38.296189 #11689]  INFO -- :   Rendered application/_my_account_left.html.erb (41.9ms)
+I, [2015-03-28T20:44:38.446955 #11689]  INFO -- :   Rendered reviews/_reviews.html.erb (149.5ms)
+I, [2015-03-28T20:44:38.450012 #11689]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-28T20:44:38.450169 #11689]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (197.4ms)
+I, [2015-03-28T20:44:38.940406 #11689]  INFO -- :   Rendered application/_header.html.erb (1.0ms)
+I, [2015-03-28T20:44:38.968194 #11689]  INFO -- :   Rendered application/_navigation.html.erb (25.7ms)
+I, [2015-03-28T20:44:38.968873 #11689]  INFO -- : Completed 200 OK in 758ms (Views: 705.8ms | ActiveRecord: 13.6ms)
+I, [2015-03-28T20:44:38.995034 #11689]  INFO -- : Started GET "/assets/jquery.mCustomScrollbar-aec22947e78451eb22b522c86ab19681.css" for 127.0.0.1 at 2015-03-28 20:44:38 +0530
+I, [2015-03-28T20:44:39.233008 #11689]  INFO -- : Started GET "/assets/images/bg.png" for 127.0.0.1 at 2015-03-28 20:44:39 +0530
+F, [2015-03-28T20:44:39.240397 #11689] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg.png"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2015-03-28T20:44:39.266802 #11689]  INFO -- : Started GET "/assets/complaint.png" for 127.0.0.1 at 2015-03-28 20:44:39 +0530
+I, [2015-03-28T20:46:54.224422 #11699]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:46:54 +0530
+I, [2015-03-28T20:46:54.299055 #11699]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:46:54.385438 #11699]  INFO -- :   Rendered application/_my_account_left.html.erb (41.2ms)
+I, [2015-03-28T20:46:54.539354 #11699]  INFO -- :   Rendered reviews/_reviews.html.erb (152.5ms)
+I, [2015-03-28T20:46:54.542484 #11699]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-28T20:46:54.542642 #11699]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (200.0ms)
+I, [2015-03-28T20:46:54.604579 #11699]  INFO -- : Completed 500 Internal Server Error in 305ms
+F, [2015-03-28T20:46:54.607620 #11699] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___54363421_106495040'
+
+
+I, [2015-03-28T20:47:06.740382 #11710]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:47:06 +0530
+I, [2015-03-28T20:47:06.815660 #11710]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:47:06.901498 #11710]  INFO -- :   Rendered application/_my_account_left.html.erb (41.8ms)
+I, [2015-03-28T20:47:07.062523 #11710]  INFO -- :   Rendered reviews/_reviews.html.erb (159.7ms)
+I, [2015-03-28T20:47:07.065617 #11710]  INFO -- :   Rendered application/_ads_and_poll.html.erb (1.0ms)
+I, [2015-03-28T20:47:07.065782 #11710]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (207.5ms)
+I, [2015-03-28T20:47:07.553136 #11710]  INFO -- :   Rendered application/_header.html.erb (1.0ms)
+I, [2015-03-28T20:47:07.584827 #11710]  INFO -- :   Rendered application/_navigation.html.erb (29.6ms)
+I, [2015-03-28T20:47:07.586419 #11710]  INFO -- : Completed 200 OK in 770ms (Views: 712.2ms | ActiveRecord: 18.9ms)
+I, [2015-03-28T20:47:07.588170 #11710]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-28 20:47:07 +0530
+I, [2015-03-28T20:47:07.592255 #11710]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-28T20:47:07.599810 #11710]  INFO -- :   Rendered application/_my_account_left.html.erb (1.4ms)
+I, [2015-03-28T20:47:07.624171 #11710]  INFO -- :   Rendered reviews/_reviews.html.erb (23.6ms)
+I, [2015-03-28T20:47:07.624481 #11710]  INFO -- :   Rendered application/_ads_and_poll.html.erb (0.1ms)
+I, [2015-03-28T20:47:07.624641 #11710]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (26.4ms)
+I, [2015-03-28T20:47:07.626061 #11710]  INFO -- :   Rendered application/_header.html.erb (0.3ms)
+I, [2015-03-28T20:47:07.630128 #11710]  INFO -- :   Rendered application/_navigation.html.erb (3.8ms)
+I, [2015-03-28T20:47:07.630599 #11710]  INFO -- : Completed 200 OK in 38ms (Views: 29.4ms | ActiveRecord: 4.7ms)
+I, [2015-03-28T20:47:07.673718 #11710]  INFO -- : Started GET "/assets/style-5f1ac62eafbf13863c174d80acc51346.css" for 127.0.0.1 at 2015-03-28 20:47:07 +0530
+I, [2015-03-28T20:47:07.679687 #11710]  INFO -- : Started GET "/assets/application-3fb2282f23c52bd559cfaed1109d66e7.js" for 127.0.0.1 at 2015-03-28 20:47:07 +0530
+I, [2015-03-28T20:47:07.766392 #11710]  INFO -- : Started GET "/assets/responsive-nav-6fcbf8d2f52fc0a3b47498740e2183cf.css" for 127.0.0.1 at 2015-03-28 20:47:07 +0530
+I, [2015-03-28T20:47:07.770795 #11710]  INFO -- : Started GET "/assets/jquery.mCustomScrollbar-aec22947e78451eb22b522c86ab19681.css" for 127.0.0.1 at 2015-03-28 20:47:07 +0530
+I, [2015-03-28T20:47:07.829749 #11710]  INFO -- : Started GET "/assets/jquery.mCustomScrollbar.concat.min.js" for 127.0.0.1 at 2015-03-28 20:47:07 +0530
+I, [2015-03-28T20:47:08.025308 #11710]  INFO -- : Started GET "/assets/xema-logo.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.041783 #11710]  INFO -- : Started GET "/assets/icon-tw.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.045675 #11710]  INFO -- : Started GET "/assets/icon-fb.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.049310 #11710]  INFO -- : Started GET "/assets/green_star.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.057100 #11710]  INFO -- : Started GET "/assets/search.jpg" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.066270 #11710]  INFO -- : Started GET "/assets/icon-gp.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.068405 #11710]  INFO -- : Started GET "/assets/complaint.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.070411 #11710]  INFO -- : Started GET "/assets/compliment.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.072515 #11710]  INFO -- : Started GET "/assets/blank.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.076675 #11710]  INFO -- : Started GET "/assets/red_star.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.078733 #11710]  INFO -- : Started GET "/assets/fill.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.205265 #11710]  INFO -- : Started GET "/assets/images/bg.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+F, [2015-03-28T20:47:08.222622 #11710] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg.png"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2015-03-28T20:47:08.223976 #11710]  INFO -- : Started GET "/assets/menu-hover.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.226226 #11710]  INFO -- : Started GET "/assets/border-right.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.227958 #11710]  INFO -- : Started GET "/assets/none.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.229948 #11710]  INFO -- : Started GET "/assets/menu_bg.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.231789 #11710]  INFO -- : Started GET "/assets/table-bg.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.269531 #11710]  INFO -- : Started GET "/assets/logout-bg.jpg" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-28T20:47:08.278457 #11710]  INFO -- : Started GET "/assets/selected.png" for 127.0.0.1 at 2015-03-28 20:47:08 +0530
+I, [2015-03-29T11:11:21.998237 #3362]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 11:11:21 +0530
+I, [2015-03-29T11:11:22.105386 #3362]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T11:11:22.166965 #3362]  INFO -- :   Rendered application/_my_account_left.html.erb (11.1ms)
+I, [2015-03-29T11:11:22.364808 #3362]  INFO -- :   Rendered reviews/_reviews.html.erb (196.5ms)
+I, [2015-03-29T11:11:22.365018 #3362]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (210.6ms)
+I, [2015-03-29T11:11:22.471250 #3362]  INFO -- : Completed 500 Internal Server Error in 366ms
+F, [2015-03-29T11:11:22.474271 #3362] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1055044577_96135260'
+
+
+I, [2015-03-29T11:11:22.755934 #3362]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-03-29 11:11:22 +0530
+I, [2015-03-29T11:11:22.761387 #3362]  INFO -- : Processing by PagesController#index as 
+I, [2015-03-29T11:11:22.761498 #3362]  INFO -- :   Parameters: {"slug"=>"favicon"}
+I, [2015-03-29T11:11:22.769615 #3362]  INFO -- : Redirected to http://localhost:3000/
+I, [2015-03-29T11:11:22.769849 #3362]  INFO -- : Completed 302 Found in 8ms (ActiveRecord: 2.0ms)
+I, [2015-03-29T11:11:22.776077 #3362]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 11:11:22 +0530
+I, [2015-03-29T11:11:22.779550 #3362]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T11:11:22.785100 #3362]  INFO -- :   Rendered application/_my_account_left.html.erb (0.8ms)
+I, [2015-03-29T11:11:22.809141 #3362]  INFO -- :   Rendered reviews/_reviews.html.erb (22.9ms)
+I, [2015-03-29T11:11:22.809317 #3362]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (25.2ms)
+I, [2015-03-29T11:11:22.914420 #3362]  INFO -- : Completed 500 Internal Server Error in 135ms
+F, [2015-03-29T11:11:22.917364 #3362] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1055044577_96135260'
+
+
+I, [2015-03-29T11:12:00.026271 #3372]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 11:12:00 +0530
+I, [2015-03-29T11:12:00.099040 #3372]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T11:12:00.153454 #3372]  INFO -- :   Rendered application/_my_account_left.html.erb (11.1ms)
+I, [2015-03-29T11:12:00.342338 #3372]  INFO -- :   Rendered reviews/_reviews.html.erb (187.5ms)
+I, [2015-03-29T11:12:00.342530 #3372]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (201.6ms)
+I, [2015-03-29T11:12:00.937605 #3372]  INFO -- :   Rendered application/_header.html.erb (1.2ms)
+I, [2015-03-29T11:12:00.966985 #3372]  INFO -- :   Rendered application/_navigation.html.erb (27.4ms)
+I, [2015-03-29T11:12:00.967671 #3372]  INFO -- : Completed 200 OK in 868ms (Views: 814.9ms | ActiveRecord: 15.2ms)
+I, [2015-03-29T11:12:00.991706 #3372]  INFO -- : Started GET "/assets/jquery.mCustomScrollbar-c8016f2a1854ce012143c1b17421ea43.css" for 127.0.0.1 at 2015-03-29 11:12:00 +0530
+I, [2015-03-29T11:12:01.047981 #3372]  INFO -- : Started GET "/assets/style-5f1ac62eafbf13863c174d80acc51346.css" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.062126 #3372]  INFO -- : Started GET "/assets/responsive-nav-6fcbf8d2f52fc0a3b47498740e2183cf.css" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.109363 #3372]  INFO -- : Started GET "/assets/application-3fb2282f23c52bd559cfaed1109d66e7.js" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.234697 #3372]  INFO -- : Started GET "/assets/xema-logo.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.248008 #3372]  INFO -- : Started GET "/assets/search.jpg" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.259553 #3372]  INFO -- : Started GET "/assets/icon-fb.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.268898 #3372]  INFO -- : Started GET "/assets/icon-tw.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.273604 #3372]  INFO -- : Started GET "/assets/icon-gp.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.281600 #3372]  INFO -- : Started GET "/assets/compliment.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.290820 #3372]  INFO -- : Started GET "/assets/complaint.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.307300 #3372]  INFO -- : Started GET "/assets/green_star.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.321887 #3372]  INFO -- : Started GET "/assets/blank.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.324446 #3372]  INFO -- : Started GET "/assets/red_star.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.326954 #3372]  INFO -- : Started GET "/assets/fill.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.416623 #3372]  INFO -- : Started GET "/assets/images/bg.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+F, [2015-03-29T11:12:01.424507 #3372] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/images/bg.png"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/kipl/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+I, [2015-03-29T11:12:01.468535 #3372]  INFO -- : Started GET "/assets/logout-bg.jpg" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.473135 #3372]  INFO -- : Started GET "/assets/selected.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.507184 #3372]  INFO -- : Started GET "/assets/border-right.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.513735 #3372]  INFO -- : Started GET "/assets/table-bg.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.522025 #3372]  INFO -- : Started GET "/assets/none.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.529294 #3372]  INFO -- : Started GET "/assets/menu_bg.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.532577 #3372]  INFO -- : Started GET "/assets/menu-hover.png" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T11:12:01.535580 #3372]  INFO -- : Started GET "/assets/fonts/andalus.ttf" for 127.0.0.1 at 2015-03-29 11:12:01 +0530
+I, [2015-03-29T16:10:19.392749 #6302]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 16:10:19 +0530
+I, [2015-03-29T16:10:19.481990 #6302]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T16:10:19.659561 #6302]  INFO -- :   Rendered application/_my_account_left.html.erb (95.4ms)
+I, [2015-03-29T16:10:19.748239 #6302]  INFO -- :   Rendered reviews/_reviews.html.erb (87.4ms)
+I, [2015-03-29T16:10:19.829818 #6302]  INFO -- :   Rendered application/_ads_and_poll.html.erb (79.4ms)
+I, [2015-03-29T16:10:19.829991 #6302]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (267.5ms)
+I, [2015-03-29T16:10:20.132160 #6302]  INFO -- : Completed 500 Internal Server Error in 650ms
+F, [2015-03-29T16:10:20.135192 #6302] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: 
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___894269997__636288878'
+
+
+I, [2015-03-29T16:10:44.230048 #6313]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 16:10:44 +0530
+I, [2015-03-29T16:10:44.301261 #6313]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T16:10:44.471129 #6313]  INFO -- :   Rendered application/_my_account_left.html.erb (95.7ms)
+I, [2015-03-29T16:10:44.559411 #6313]  INFO -- :   Rendered reviews/_reviews.html.erb (87.0ms)
+I, [2015-03-29T16:10:44.638340 #6313]  INFO -- :   Rendered application/_ads_and_poll.html.erb (76.8ms)
+I, [2015-03-29T16:10:44.638521 #6313]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (264.5ms)
+I, [2015-03-29T16:10:44.697085 #6313]  INFO -- : Completed 500 Internal Server Error in 396ms
+F, [2015-03-29T16:10:44.699993 #6313] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: 
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___374471244__636288898'
+
+
+I, [2015-03-29T16:11:18.105334 #6330]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 16:11:18 +0530
+I, [2015-03-29T16:11:18.178736 #6330]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T16:11:18.348892 #6330]  INFO -- :   Rendered application/_my_account_left.html.erb (95.4ms)
+I, [2015-03-29T16:11:18.439878 #6330]  INFO -- :   Rendered reviews/_reviews.html.erb (89.7ms)
+I, [2015-03-29T16:11:18.522414 #6330]  INFO -- :   Rendered application/_ads_and_poll.html.erb (80.3ms)
+I, [2015-03-29T16:11:18.522586 #6330]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (270.5ms)
+I, [2015-03-29T16:11:18.581925 #6330]  INFO -- : Completed 500 Internal Server Error in 403ms
+F, [2015-03-29T16:11:18.584835 #6330] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: 
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__903470293__636288578'
+
+
+I, [2015-03-29T16:11:34.918124 #6338]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 16:11:34 +0530
+I, [2015-03-29T16:11:34.992667 #6338]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T16:11:35.165234 #6338]  INFO -- :   Rendered application/_my_account_left.html.erb (98.7ms)
+I, [2015-03-29T16:11:35.253447 #6338]  INFO -- :   Rendered reviews/_reviews.html.erb (86.8ms)
+I, [2015-03-29T16:11:35.335894 #6338]  INFO -- :   Rendered application/_ads_and_poll.html.erb (80.3ms)
+I, [2015-03-29T16:11:35.336077 #6338]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (271.2ms)
+I, [2015-03-29T16:11:35.395250 #6338]  INFO -- : Completed 500 Internal Server Error in 402ms
+F, [2015-03-29T16:11:35.398382 #6338] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: 
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__933942827__636288588'
+
+
+I, [2015-03-29T16:11:52.934795 #6347]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 16:11:52 +0530
+I, [2015-03-29T16:11:53.008547 #6347]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T16:11:53.179000 #6347]  INFO -- :   Rendered application/_my_account_left.html.erb (98.3ms)
+I, [2015-03-29T16:11:53.266309 #6347]  INFO -- :   Rendered reviews/_reviews.html.erb (85.7ms)
+I, [2015-03-29T16:11:53.347866 #6347]  INFO -- :   Rendered application/_ads_and_poll.html.erb (79.4ms)
+I, [2015-03-29T16:11:53.348100 #6347]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (269.1ms)
+I, [2015-03-29T16:11:53.407181 #6347]  INFO -- : Completed 500 Internal Server Error in 398ms
+F, [2015-03-29T16:11:53.410124 #6347] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: 
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___599970093__636288628'
+
+
+I, [2015-03-29T16:12:27.181696 #6359]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 16:12:27 +0530
+I, [2015-03-29T16:12:27.254329 #6359]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T16:12:27.424117 #6359]  INFO -- :   Rendered application/_my_account_left.html.erb (97.2ms)
+I, [2015-03-29T16:12:27.512535 #6359]  INFO -- :   Rendered reviews/_reviews.html.erb (87.1ms)
+I, [2015-03-29T16:12:27.594456 #6359]  INFO -- :   Rendered application/_ads_and_poll.html.erb (79.6ms)
+I, [2015-03-29T16:12:27.594646 #6359]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (269.2ms)
+I, [2015-03-29T16:12:27.654147 #6359]  INFO -- : Completed 500 Internal Server Error in 400ms
+F, [2015-03-29T16:12:27.657092 #6359] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "...-color: #f2a229": expected ";", was ");"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/jquery.mCustomScrollbar.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application" %>
+    14:   <%= csrf_meta_tags %>
+    15: 
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___895826442__635764388'
+
+
+I, [2015-03-29T16:13:02.583053 #6373]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-29 16:13:02 +0530
+I, [2015-03-29T16:13:02.654667 #6373]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-03-29T16:13:02.821985 #6373]  INFO -- :   Rendered application/_my_account_left.html.erb (96.3ms)
+I, [2015-03-29T16:13:02.910326 #6373]  INFO -- :   Rendered reviews/_reviews.html.erb (87.1ms)
+I, [2015-03-29T16:13:02.994236 #6373]  INFO -- :   Rendered application/_ads_and_poll.html.erb (81.7ms)
+I, [2015-03-29T16:13:02.994437 #6373]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (270.2ms)
+I, [2015-04-20T13:04:37.283793 #6545]  INFO -- : 2015-04-20T13:04:37+0530: [Worker(host:kipl-Inspiron-620s pid:6545)] Starting job worker
+I, [2015-04-20T13:04:42.879374 #6227]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 13:04:42 +0530
+I, [2015-04-20T13:04:42.958963 #6227]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T13:04:43.260369 #6227]  INFO -- :   Rendered application/_my_account_left.html.erb (45.9ms)
+I, [2015-04-20T13:04:43.407104 #6227]  INFO -- :   Rendered reviews/_reviews.html.erb (137.1ms)
+I, [2015-04-20T13:04:43.681621 #6227]  INFO -- :   Rendered application/_ads_and_poll.html.erb (235.1ms)
+I, [2015-04-20T13:04:43.681809 #6227]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (482.1ms)
+I, [2015-04-20T13:06:11.572202 #6545]  INFO -- : 2015-04-20T13:06:11+0530: [Worker(host:kipl-Inspiron-620s pid:6545)] Exiting...
+I, [2015-04-20T13:06:25.332926 #6565]  INFO -- : 2015-04-20T13:06:25+0530: [Worker(host:kipl-Inspiron-620s pid:6565)] Starting job worker
+I, [2015-04-20T13:07:41.765878 #6227]  INFO -- : Completed 401 Unauthorized in 178807ms
+I, [2015-04-20T13:08:07.794041 #6594]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 13:08:07 +0530
+I, [2015-04-20T13:08:07.883198 #6594]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T13:08:08.035278 #6594]  INFO -- :   Rendered application/_my_account_left.html.erb (12.6ms)
+I, [2015-04-20T13:08:08.171013 #6594]  INFO -- :   Rendered reviews/_reviews.html.erb (134.4ms)
+I, [2015-04-20T13:08:08.256463 #6594]  INFO -- :   Rendered application/_ads_and_poll.html.erb (83.3ms)
+I, [2015-04-20T13:08:08.256643 #6594]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (235.4ms)
+I, [2015-04-20T13:09:58.694503 #6594]  INFO -- : Completed 401 Unauthorized in 110811ms
+I, [2015-04-20T13:10:10.725849 #6701]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 13:10:10 +0530
+I, [2015-04-20T13:10:10.800681 #6701]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T13:10:10.970522 #6701]  INFO -- :   Rendered application/_my_account_left.html.erb (12.1ms)
+I, [2015-04-20T13:10:11.113751 #6701]  INFO -- :   Rendered reviews/_reviews.html.erb (141.9ms)
+I, [2015-04-20T13:10:11.198721 #6701]  INFO -- :   Rendered application/_ads_and_poll.html.erb (82.8ms)
+I, [2015-04-20T13:10:11.198896 #6701]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (241.9ms)
+I, [2015-04-20T13:14:45.632853 #6701]  INFO -- : Completed 401 Unauthorized in 274832ms
+I, [2015-04-20T15:00:38.274808 #6565]  INFO -- : 2015-04-20T15:00:38+0530: [Worker(host:kipl-Inspiron-620s pid:6565)] Exiting...
+I, [2015-04-20T17:15:46.094949 #10262]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 17:15:46 +0530
+I, [2015-04-20T17:15:46.171691 #10262]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T17:15:46.362053 #10262]  INFO -- :   Rendered application/_my_account_left.html.erb (12.7ms)
+I, [2015-04-20T17:15:46.501175 #10262]  INFO -- :   Rendered reviews/_reviews.html.erb (137.7ms)
+I, [2015-04-20T17:15:46.586384 #10262]  INFO -- :   Rendered application/_ads_and_poll.html.erb (83.0ms)
+I, [2015-04-20T17:15:46.586569 #10262]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (238.7ms)
+I, [2015-04-20T17:15:46.681978 #10262]  INFO -- : Completed 500 Internal Server Error in 510ms
+F, [2015-04-20T17:15:46.685022 #10262] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "5	color:#696969": expected "{", was ";"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/style4.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style4", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application","menu" ,"script"%>
+    14:   <%= csrf_meta_tags %>
+    15:  <link rel="shortcut icon" type="image/x-icon" href="/assets/fevicon.png">
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__983006044_93628390'
+
+
+I, [2015-04-20T17:15:46.864891 #10262]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-04-20 17:15:46 +0530
+I, [2015-04-20T17:15:46.869613 #10262]  INFO -- : Processing by PagesController#index as 
+I, [2015-04-20T17:15:46.869883 #10262]  INFO -- :   Parameters: {"slug"=>"favicon"}
+I, [2015-04-20T17:15:46.998282 #10262]  INFO -- : Redirected to http://localhost:3000/
+I, [2015-04-20T17:15:46.998539 #10262]  INFO -- : Completed 302 Found in 128ms (ActiveRecord: 117.5ms)
+I, [2015-04-20T17:15:47.003862 #10262]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-04-20 17:15:47 +0530
+I, [2015-04-20T17:15:47.007425 #10262]  INFO -- : Processing by PagesController#index as 
+I, [2015-04-20T17:15:47.007526 #10262]  INFO -- :   Parameters: {"slug"=>"favicon"}
+I, [2015-04-20T17:15:47.013667 #10262]  INFO -- : Redirected to http://localhost:3000/
+I, [2015-04-20T17:15:47.013874 #10262]  INFO -- : Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+I, [2015-04-20T17:15:47.057427 #10262]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 17:15:47 +0530
+I, [2015-04-20T17:15:47.060705 #10262]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T17:15:47.066325 #10262]  INFO -- :   Rendered application/_my_account_left.html.erb (0.7ms)
+I, [2015-04-20T17:15:47.156341 #10262]  INFO -- :   Rendered reviews/_reviews.html.erb (89.3ms)
+I, [2015-04-20T17:15:47.160808 #10262]  INFO -- :   Rendered application/_ads_and_poll.html.erb (4.1ms)
+I, [2015-04-20T17:15:47.160982 #10262]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (95.5ms)
+I, [2015-04-20T17:15:47.209933 #10262]  INFO -- : Completed 500 Internal Server Error in 149ms
+F, [2015-04-20T17:15:47.212760 #10262] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "5	color:#696969": expected "{", was ";"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/style4.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style4", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application","menu" ,"script"%>
+    14:   <%= csrf_meta_tags %>
+    15:  <link rel="shortcut icon" type="image/x-icon" href="/assets/fevicon.png">
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__983006044_93628390'
+
+
+I, [2015-04-20T17:16:51.981442 #10277]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 17:16:51 +0530
+I, [2015-04-20T17:16:52.056661 #10277]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T17:16:52.219465 #10277]  INFO -- :   Rendered application/_my_account_left.html.erb (12.3ms)
+I, [2015-04-20T17:16:52.357748 #10277]  INFO -- :   Rendered reviews/_reviews.html.erb (137.0ms)
+I, [2015-04-20T17:16:52.442396 #10277]  INFO -- :   Rendered application/_ads_and_poll.html.erb (82.5ms)
+I, [2015-04-20T17:16:52.442584 #10277]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (236.8ms)
+I, [2015-04-20T17:16:52.495549 #10277]  INFO -- : Completed 500 Internal Server Error in 439ms
+F, [2015-04-20T17:16:52.498549 #10277] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "5	color:#696969": expected "{", was ";"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/style4.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style4", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application","menu" ,"script"%>
+    14:   <%= csrf_meta_tags %>
+    15:  <link rel="shortcut icon" type="image/x-icon" href="/assets/fevicon.png">
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___164812392_95132170'
+
+
+I, [2015-04-20T17:17:53.391513 #10298]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 17:17:53 +0530
+I, [2015-04-20T17:17:53.464505 #10298]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T17:17:53.613301 #10298]  INFO -- :   Rendered application/_my_account_left.html.erb (12.6ms)
+I, [2015-04-20T17:17:53.750566 #10298]  INFO -- :   Rendered reviews/_reviews.html.erb (136.0ms)
+I, [2015-04-20T17:17:53.835647 #10298]  INFO -- :   Rendered application/_ads_and_poll.html.erb (82.9ms)
+I, [2015-04-20T17:17:53.835825 #10298]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (236.6ms)
+I, [2015-04-20T17:17:53.855194 #10298]  INFO -- : Completed 500 Internal Server Error in 390ms
+F, [2015-04-20T17:17:53.858263 #10298] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "5	color:#696969": expected "{", was ";"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/style4.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style4", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application","menu" ,"script"%>
+    14:   <%= csrf_meta_tags %>
+    15:  <link rel="shortcut icon" type="image/x-icon" href="/assets/fevicon.png">
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___300764907_84162770'
+
+
+I, [2015-04-20T17:18:28.670595 #10309]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 17:18:28 +0530
+I, [2015-04-20T17:18:28.745579 #10309]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T17:18:28.923396 #10309]  INFO -- :   Rendered application/_my_account_left.html.erb (12.3ms)
+I, [2015-04-20T17:18:29.060896 #10309]  INFO -- :   Rendered reviews/_reviews.html.erb (136.2ms)
+I, [2015-04-20T17:18:29.145465 #10309]  INFO -- :   Rendered application/_ads_and_poll.html.erb (82.4ms)
+I, [2015-04-20T17:18:29.145689 #10309]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (236.0ms)
+I, [2015-04-20T17:20:44.583496 #10342]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 17:20:44 +0530
+I, [2015-04-20T17:20:44.660082 #10342]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T17:20:44.810172 #10342]  INFO -- :   Rendered application/_my_account_left.html.erb (12.4ms)
+I, [2015-04-20T17:20:44.952956 #10342]  INFO -- :   Rendered reviews/_reviews.html.erb (141.5ms)
+I, [2015-04-20T17:20:45.037663 #10342]  INFO -- :   Rendered application/_ads_and_poll.html.erb (82.5ms)
+I, [2015-04-20T17:20:45.037837 #10342]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (241.5ms)
+I, [2015-04-20T17:20:45.091729 #10342]  INFO -- : Completed 500 Internal Server Error in 431ms
+F, [2015-04-20T17:20:45.094750 #10342] FATAL -- : 
+ActionView::Template::Error (Invalid CSS after "5	color:#696969": expected "{", was ";"
+  (in /media/New Volume/src/customer_support/app/assets/stylesheets/style4.css)):
+     9:     <meta name="description" content="<%= @meta_description %>" />
+    10: 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=0" />
+    11: 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    12:   <%= stylesheet_link_tag    "style4", "responsive-nav","jquery.mCustomScrollbar" %>
+    13:   <%= javascript_include_tag "application","menu" ,"script"%>
+    14:   <%= csrf_meta_tags %>
+    15:  <link rel="shortcut icon" type="image/x-icon" href="/assets/fevicon.png">
+  app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___356199154_82256400'
+
+
+I, [2015-04-20T17:21:12.809567 #10354]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-20 17:21:12 +0530
+I, [2015-04-20T17:21:12.885936 #10354]  INFO -- : Processing by WelcomeController#index as HTML
+I, [2015-04-20T17:21:13.041875 #10354]  INFO -- :   Rendered application/_my_account_left.html.erb (13.4ms)
+I, [2015-04-20T17:21:13.178779 #10354]  INFO -- :   Rendered reviews/_reviews.html.erb (135.6ms)
+I, [2015-04-20T17:21:13.263496 #10354]  INFO -- :   Rendered application/_ads_and_poll.html.erb (82.6ms)
+I, [2015-04-20T17:21:13.263691 #10354]  INFO -- :   Rendered welcome/index.html.erb within layouts/application (236.6ms)
+I, [2015-04-20T17:23:18.193607 #10354]  INFO -- : Completed 401 Unauthorized in 125307ms

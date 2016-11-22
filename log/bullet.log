@@ -1,0 +1,28 @@
+2015-03-17 16:37:43[WARN] user: kipl
+http://localhost:3001/users/sign_in
+Unused Eager Loading detected
+  Poll => ["options"]
+  Remove from your finder: :include => [:options]
+
+2015-03-17 16:37:49[WARN] user: kipl
+http://localhost:3001/users/sign_in
+Unused Eager Loading detected
+  Poll => ["options"]
+  Remove from your finder: :include => [:options]
+
+2015-03-17 16:37:50[WARN] user: kipl
+http://localhost:3001/admin
+N+1 Query detected
+  Review => [:company]
+  Add to your finder: :include => [:company]
+N+1 Query method call stack
+  /media/New Volume/src/customer_support/app/views/admin/index.html.erb:104:in `block in _app_views_admin_index_html_erb__387620612_99502880'
+  /media/New Volume/src/customer_support/app/views/admin/index.html.erb:99:in `_app_views_admin_index_html_erb__387620612_99502880'
+2015-03-17 16:37:50[WARN] user: kipl
+http://localhost:3001/admin
+N+1 Query detected
+  Review => [:user]
+  Add to your finder: :include => [:user]
+N+1 Query method call stack
+  /media/New Volume/src/customer_support/app/views/admin/index.html.erb:106:in `block in _app_views_admin_index_html_erb__387620612_99502880'
+  /media/New Volume/src/customer_support/app/views/admin/index.html.erb:99:in `_app_views_admin_index_html_erb__387620612_99502880'

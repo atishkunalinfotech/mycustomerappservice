@@ -1,0 +1,68 @@
+<% @company = Company.where('id = ?', params[:company]).first rescue nil%>
+<table id="supplier_level">
+	<thead>
+		<tr>
+			<th>Supplier <%= @company.title rescue nil%>: Total Reviews</th>
+			<th>Total</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Compliments</td>
+			<td><%= @compliments rescue nil%></td>
+		</tr>
+		<tr>
+			<td>Complaint</td>
+			<td><%= @complaints rescue nil%></td>
+		</tr>
+		<tr>
+			<td><strong>Total</strong></td>
+			<td><%= @complaints + @compliments%></td>
+		</tr>
+
+	</tbody>
+</table>
+
+<br/><br/>
+<table id="supplier_level_compliment">
+	<thead>
+		<tr>
+			<th>Supplier <%= @company.title rescue nil%> :Nature of Compliment</th>
+			<th>Total</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<% @n.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+		
+	</tbody>
+</table>
+<br/><br/>
+
+
+<table id="supplier_level_complaint">
+	<thead>
+		<tr>
+			<th>Supplier <%= @company.title rescue nil%> :Nature of Complaints</th>
+			<th>Total</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+			<% @n1.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

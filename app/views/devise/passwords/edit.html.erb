@@ -1,0 +1,39 @@
+<%content_for :left do%>
+<div class="page-link">
+          <ul>
+              <li><a href="<%= root_path %>">Home</a></li>
+                <li><span>&raquo;</span></li>
+                <li><a href="#" class="selected">My Account</a></li>
+            </ul>
+        </div>
+<%end%>
+ <div class="max-box">
+        	<div class="login-box1">
+        	<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
+
+			<%= devise_error_messages! %>
+            	<div class="log-headac" style="color:#696969;">Change your password</div>
+                    <div class="login-field-box">
+                	<div class="text-box1">Password *</div>
+                   <%= f.password_field :password, :autofocus => true ,:class => "field1" ,:required => true, :placeholder => "Minimun 8 characters." %>
+                    </div>
+                    
+                     <div class="login-field-box">
+                	<div class="text-box1">Confirm Password *</div>
+                   <%= f.password_field :password_confirmation ,:class => "field1" ,:required => true%>
+                    </div>
+                   <%= f.hidden_field :reset_password_token %>
+                <div class="clear"></div>
+
+                   <div class="login-field-box2">
+                   	<%= f.submit "Reset Password" ,:class=>"btn2" %>
+                  </div>
+                  <% end %>
+              </div>
+            <div class="clear"></div>
+            	
+        </div>
+
+
+
+	

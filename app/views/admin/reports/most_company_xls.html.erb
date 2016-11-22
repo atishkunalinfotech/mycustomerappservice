@@ -1,0 +1,83 @@
+<h4>Suppliers that get most complaints/compliments</h4>
+<%if params[:subaction] == "most_company" %>
+  <strong>Displaying data for duration <%= params[:report5][:start_date] rescue nil%> to <%= params[:report5][:end_date] rescue nil%>
+<%elsif params[:id] == "data_dump"%>
+<%else%>
+  <strong>Displaying data for 12 Months
+<%end%>
+<table >
+  <thead>
+     
+        <th width="50%">Most Compliments</th>
+        <th width="50%">Total</th>
+  </thead>
+    
+  <tbody>
+     
+      <tr>
+        <%unless @value_compliments.blank?%>
+          <td width="50%"><strong><%= Company.find(@value_compliments).title rescue nil%></strong></td>
+        <%else%>
+          <td width="50%"><strong>NIL</strong></td>
+        <%end%>
+        
+        <%unless @max_compliment.blank?%>
+          <td width="50%"><strong><%= @max_compliment rescue nil%></strong></td>
+        <%else%>
+          <td width="50%"><strong>NIL</strong></td>
+        <%end%>
+      </tr>
+   
+  </tbody>
+</table>
+<br/><br/>
+<table >
+  <thead>
+      <tr>
+        <th >Most Complaint</th>
+      </tr>
+  </thead>
+    
+  <tbody>
+
+      <tr>
+        <%unless @value_complaints.blank?%>
+          <td width="50%"><strong><%= Company.find(@value_complaints).title rescue nil%></strong></td>
+        <%else%>
+          <td width="50%"><strong>NIL</strong></td>
+        <%end%>
+        <%unless @max_complaint.blank?%>
+          <td width="50%"><strong><%= @max_complaint rescue nil%></strong></td>
+        <%else%>
+          <td width="50%"><strong>NIL</strong></td>
+        <%end%>
+      </tr>
+   
+  </tbody>
+</table>
+
+<br/>
+<%if @value_compliments.present?%>
+<h3>Most Compliments From Supplier : <%= Company.find(@value_compliments).title rescue nil%></h3>
+<table id="admin_review_xls" >
+  <%= render 'common_header_reviews' %>
+  <tbody>
+    <% @compliments.each_with_index.each do |review,i| %>
+      <%= render 'common_reviews', :review => review, :i => i %>
+    <% end %>
+  </tbody>  
+</table>
+<%end%>
+<br/></br>
+<%if @value_complaints.present?%>
+<h3>Most Complaints From Supplier : <%= Company.find(@value_complaints).title rescue nil%></h3>
+<table id="admin_review_xls" >
+ <%= render 'common_header_reviews' %>
+
+  <tbody>
+    <% @complaints.each_with_index.each do |review,i| %>
+     <%= render 'common_reviews', :review => review, :i => i %>
+    <% end %>
+  </tbody>  
+</table>
+<%end%>

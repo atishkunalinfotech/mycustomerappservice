@@ -1,0 +1,52 @@
+ <%if params[:subaction] == "company_stat_record" %>
+    <h4>Industry conversion stats</h4>
+    <strong>Displaying data for duration <%= @start_from rescue nil%> to <%= @start_to rescue nil%>
+ <%elsif params[:id] == "data_dump"%>
+     <h4>Industry conversion stats</h4>
+ <%else%>
+  <h4>Industry conversion stats</h4>
+  <strong>Conversions : Industry conversion stats (12 Months)</strong>
+ <%end%>  
+<table id="industry_conversion">
+  <thead>
+    <tr>
+      <th>Sr. No. </th>
+      <th>Industry</th>
+      <th>Total Complaints Count</th>
+      <th>Complaint --> Compliment</th>
+      <th>Conversion Percentage</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @industries.each_with_index.each do |industry,i| %>
+    <%if params[:id] == "data_dump"%>
+     <% @compliment = Review.where('industry_id = ? and user_id is not null', industry.id) rescue nil%>
+    <%else%>
+     <% @compliment = Review.where('Date(created_at) >= ? and Date(created_at) <= ? and industry_id = ? and user_id is not null', @start_from, @start_to, industry.id) rescue nil%>
+    <%end%>
+    
+    <% @complaint_conversion = @compliment.where('review_type = ?', 'complaint') rescue nil%>
+      
+    <% @compliments = @compliment.where('change_date is not null')%> 
+      <%if @complaint_conversion.present? or @compliments.present?%> 
+      <tr>
+        <td><%= i+1%></td>
+        <td><%=industry.title rescue nil %></td>
+        <td><%=@complaint_conversion.count + @compliments.count rescue nil %></td>
+        <td><%=@compliments.count rescue nil %></td>
+        <% @a = @complaint_conversion.count + @compliments.count %>
+        <% @percentage =  @compliments.count / @a * 100 rescue nil%>
+        <%unless @percentage.present?%>
+          <td>0</td>
+        <%else%>
+          <td><%= @percentage rescue nil%>%</td>
+        <%end%>
+      </tr>
+    <%end%>
+    <%end%>
+    
+  </tbody>  
+</table>
+
+<br/><br/>

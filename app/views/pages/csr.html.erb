@@ -1,0 +1,49 @@
+
+
+<div class="max-box">
+  <div class="page-link">
+          <ul>
+                <li><a href="<%= root_path %>">Home</a></li>
+                <li><span>&raquo;</span></li>
+                <li><a href="#" class="selected">CSR</a></li>
+            </ul>
+        </div>  
+    <div class="section-one">
+     	<div class="clear"></div>
+      
+        	<%#content_for :left do%>
+	
+		<%unless @performance.blank?%>
+
+		    <div class="polls">
+            <%#unless @performance.performance_img.blank?%>
+	      	 <%#= link_to (image_tag @performance.performance_img),@performance.worst_performance  rescue nil%>
+	        <%#end%>
+            <%unless @performance.performance_img.blank?%>
+
+		     <%= image_tag @performance.performance_img, :style => "width:236px;height:230px;" %>
+           <%end%>
+            </div>
+	    <%end%>
+	
+	<%#end%>
+       
+    </div>
+
+
+        
+        	<div class="form-box21">
+            	<div class="information-new">
+                  <div class="heading2">Corporate Social Responsibility</div>
+                 <p><%= raw(@page.try(:description)) %></p>
+                </div>
+              <div class="clear"></div>
+  
+              <div class="clear"></div> 
+                
+            </div>
+            
+               <div class="clear"></div>
+        </div>
+        
+

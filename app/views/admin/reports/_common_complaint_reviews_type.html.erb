@@ -1,0 +1,26 @@
+<% if @ncs%>
+<table id="admin_review_xls" >
+	<%= render 'common_header_reviews'%>
+
+	<tbody>
+	  <% @ncs.flatten.each_with_index.each do |review,i| %>
+
+	     <%= render 'common_reviews', :review => review, :i => i %>
+	  <% end %>
+	</tbody>	
+</table>
+
+
+<% else %>
+<table id="admin_review_xls" >
+	<%= render 'common_header_reviews'%>
+
+	<tbody>
+	  <% @reviews1.flatten.each_with_index.each do |review,i| %>
+
+	     <%= render 'common_reviews', :review => review, :i => i %>
+	  <% end %>
+	</tbody>	
+</table>
+<% end %>
+

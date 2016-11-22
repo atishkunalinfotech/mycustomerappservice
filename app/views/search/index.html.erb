@@ -1,0 +1,67 @@
+<div class="max-box">
+        
+         <div class="section-one">
+<%content_for :left do%>
+	<span class="span3">
+		 <%=render :partial=> "application/my_account_left"%>
+	</span>
+<%end%>
+
+<div class="form-box21">
+           
+  <div class="form-box21faq1">
+    <div class="information-new1">
+      <div class="heading2">Search Results</div>
+       <div class="technology user2" style="text-align: left;width:400px;">
+        <% if @comment_results.present? %>
+        
+            <% @comment_results.each do |comment| %>
+              * <%=link_to comment.title.html_safe, review_path(comment.review)%><br/>
+            <% end %>
+        
+        <% end %>
+       
+       <% if @company_results.present?  %>
+        
+            <% @company_results.each do |company| %>
+             * <%=link_to company.title.html_safe, search_reviews_path(company_id: company.id)%><br/>
+            <% end %>
+       
+        <% end %>
+        
+        <% if @town_results.present? %>
+        
+           <% @town_results.each do |town| %>
+             * <%=link_to town.title.html_safe, search_reviews_path(town_id: town.id)%><br/>
+           <% end %>
+       
+         <% end %>
+        
+         <% if @location_results.present? %>
+          <% @location_results.each do |location| %>
+            * <%=link_to location.title.html_safe, search_reviews_path(location_id: location.id)%><br/>
+          <% end %>
+        <% end %>
+        
+        <% if @supplier_results.present? %>
+           <% @supplier_results.each do |supplier| %>
+            * <%=link_to supplier.title.html_safe, search_reviews_path(supplier_id: supplier.id)%><br/>
+            <% end %>
+       <% end %>
+        </div>
+        <div class="clear"></div>
+                
+                
+                
+                
+                
+                
+            <div class="clear"></div>
+         </div>
+              
+            
+                
+            </div>
+            
+               <div class="clear"></div>
+        </div>

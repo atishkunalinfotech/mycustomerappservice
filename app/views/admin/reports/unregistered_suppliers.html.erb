@@ -1,0 +1,31 @@
+<h1>Total number of Un-registered Companies</h1>
+<%if params[:subaction] == "unregistered_suppliers" %>
+  <strong>Displaying data for duration <%= params[:report4][:start_date]%> to <%= params[:report4][:end_date]%>
+<%else%>
+  <strong>Displaying data for 12 Months
+<%end%>
+<table>
+  <thead>
+    <tr>
+      <th>Sr. No</th>
+      <th width="10%">Supplier Company</th>
+      <th width="10%">Industry</th>
+      <th width="10%">Subscription</th>
+      <th width="10%">Start Date</th>
+      <th width="10%">End Date</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @supplier_unregistered.each_with_index.each do |supplier,i| %>
+      <tr>
+        <td><%= i+1%></td>
+        <td><%= supplier.supplier_name rescue nil%></td>
+        <td><%= supplier.industry rescue nil%></td>
+        <td><%= supplier.subscription rescue nil%></td>
+        <td><%= supplier.start_date.strftime("%d-%m-%Y") rescue nil%></td>
+        <td><%= supplier.end_date.strftime("%d-%m-%Y") rescue nil%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

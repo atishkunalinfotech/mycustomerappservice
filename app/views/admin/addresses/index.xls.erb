@@ -1,0 +1,30 @@
+
+<h1>Addresses</h1>
+
+<table id="addresses" >
+  <thead>
+    <tr>
+      <th>Sr. No.</th>
+      <th>Industry</th>
+      <th>Company</th>
+      <th>Town</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @addresses.each.with_index(1) do |address,index| %>
+      <tr>
+        <td><%= index %></td>
+        <td><%= address.company.industry.title rescue nil %></td>
+        <td><%= address.company.title rescue nil %></td>
+        <td><%= address.town.try(:title) rescue nil %></td>
+        <td><%= address.try(:location).try(:title) rescue nil %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Address', new_admin_address_path, class: "btn btn-primary" if can? :create, Address%>

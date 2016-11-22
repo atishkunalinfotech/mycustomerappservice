@@ -1,0 +1,12 @@
+<h3>Edit Comment<h3/>
+<%=form_for([:admin, @review, @comment]) do |f| %>
+  Original Comment: <%= @comment.title.html_safe %>
+  <div class="field">
+    <%= f.label :modified_comment, 'Modified Comment' %>
+    <%= f.text_area  :modified_comment, :required => true  %>
+  </div>
+  <br/>
+  <div class="actions rgh_in">
+      <%= f.submit 'Post Comment', :confirm => "Are you sure..?",class: "btn btn-primary" %><br/>
+  </div>
+<%end%>

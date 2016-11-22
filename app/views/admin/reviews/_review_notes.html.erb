@@ -1,0 +1,19 @@
+<table id="review_notes">
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Note </th>
+		<th>Time</th>
+	</tr>
+	</thead>
+	<tbody>
+   <% @review_notes.each do |rn| %>
+    <tr>
+	  <td><%= rn.name %></td>
+      <td><%= rn.note %></td>
+       <td><%= rn.created_at.strftime("%d-%m-%Y | %H:%M") %></td>
+    </tr>
+   <% end %>
+   </tbody>
+   </table>
+<hr/>

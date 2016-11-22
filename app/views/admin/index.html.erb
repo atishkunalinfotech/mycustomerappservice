@@ -1,0 +1,280 @@
+  <%unless @supplier_registration.blank?%>
+	  <h4>List of Supplier Registrations Expired</h4>
+		<table id="supplier_registration">
+			<thead>
+			  <tr>
+			    <th width="15%">Supplier Company</th>
+			    <th width="15%">Mobile Number</th>
+			    <th width="15%">Supplier Email</th>
+			    <th width="15%">Start Date</th>
+			    <th width="15%">End Date</th>
+			  </tr>
+			</thead>
+
+			<tbody>
+			  <% @supplier_registration.each do |supplier| %>
+			    <tr>
+			      <td><%=supplier.supplier_name%></td>
+                  <td><%=supplier.mobile_number%></td>
+			      <td><a href="mailto:<%=supplier.email%>"><%=supplier.email%></a></td>
+			      <td><%=supplier.start_date.strftime("%d-%m-%Y")%></td>
+                  <td><%=supplier.end_date.strftime("%d-%m-%Y")%></td>
+			    </tr>
+			  <% end %>
+			</tbody>
+		</table>
+<%end%>
+<% if current_user.is? :admin %> 
+  <h4>Customers</h4>
+	<table id="customers">
+		<thead>
+		  <tr>
+		    <th width="15%">First Name</th>
+		    <th width="15%">Last Name</th>
+		    <th width="30%">Email</th>
+		    <th width="20%">Email Confirmation</th>
+		    <th width="20%">Action</th>
+		  </tr>
+		</thead>
+
+		<tbody>
+		  <% @customers.each do |user| %>
+		    <tr>
+		      <td><%=user.first_name%></td>
+		      <td><%=user.last_name%></td>
+		      <td><%=user.email%></td>
+		      <td><%=user.confirmed_at.present? ? 'Confirmed' : 'Pending'%></td>
+		      <td>
+		        <%= link_to 'Show', admin_user_path(user), class: "btn btn-primary" if can? :show, User, :role => 'user' %>
+        		<%= link_to 'Destroy', admin_user_path(user), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } if can? :destroy, User%>
+  				</td>
+		    </tr>
+		  <% end %>
+		</tbody>
+	</table>
+  
+	<h4>Agents</h4>
+	<table id="index_agents">
+		<thead>
+		  <tr>
+		    <th width="20%">First Name</th>
+		    <th width="20%">Last Name</th>
+		    <th width="40%">Email</th>
+		    <th width="20%">Action</th>
+		  </tr>
+		</thead>
+
+		<tbody>
+		  <% @agents.each do |agent| %>
+		    <tr>
+		      <td><%= agent.first_name%></td>
+		      <td><%= agent.last_name%></td>
+		      <td><%= agent.email%></td>
+				  <td>
+				    <%= link_to 'Edit', edit_admin_agent_path(agent), class: "btn btn-primary" if can? :edit, User, :role => 'agent' %>
+        		<%= link_to 'Destroy', admin_agent_path(agent), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } if can? :destroy, User%>
+  				</td>
+		    </tr>
+		  <% end %>
+		</tbody>
+	</table>
+
+<% end %>
+
+<h4>My Reviews To Action</h4>
+
+<table id="recently_added_review" >
+	<thead>
+	  <tr>
+	  	<th>Sr. No.</th>
+		<th>Date</th>
+		<th>Ticket Number</th>
+		<th>Review</th>
+		<th>Company</th>
+		<th>Title</th>
+		<th>Customer Name</th>
+	  </tr>
+	</thead>
+
+	<tbody>
+	  <% @reviews.each.with_index(1) do |review,index| %>
+	    <tr>
+	    	<td><%= index %></td>
+			<td><%=review.created_at.strftime("%d/%m/%Y | %H:%M") rescue nil %></td>
+			<td><%=link_to review.ticket_number,edit_admin_review_path(review) rescue nil %></td>
+			<td><%=review.review_type rescue nil %></td>
+			<td><%=review.company.title rescue nil %></td>
+			<td><%=review.title rescue nil %></td>
+			<td><%=review.try(:user).try(:preferred_alias)%></td>
+        </tr>
+	  <% end %>
+	</tbody>
+</table>
+<h4>All Reviews</h4>
+
+<table id="admin_review" >
+	<thead>
+	  <tr>
+	  	<th>Sr. No.</th>
+		<th>Date</th>
+		<th>Ticket Number</th>
+		<th>Review</th>
+		<th>Company</th>
+		<th>Title</th>
+	    <th>Customer Name</th>
+	    <th>Archive</th>
+	    <th>IP Address</th>
+	  </tr>
+	</thead>
+
+	<tbody>
+	  <% @recent_reviews.each.with_index(1) do |review,index| %>
+	    <tr>
+			<td><%= index %></td>
+			<td><%= review.created_at.strftime("%d/%m/%Y | %H:%M") rescue nil %></td>
+			<%if review.user.confirmed_at.present?%>
+			  <td><%= link_to review.ticket_number, edit_admin_review_path(review) rescue nil %></td>
+			<%else%>
+			  <td><%= review.ticket_number rescue nil %></td>
+			<%end%>
+			<td><%= review.review_type.titleize rescue nil %></td>
+			<td><%= review.company.title.titleize rescue nil %></td>
+			<td><%= review.title.titleize rescue nil %></td>
+			<td><%= review.try(:user).try(:preferred_alias) %></td>
+			<td>
+				<% if review.archive?  %>
+				 Archived
+				<% elsif review.notes %>
+				 <%= review.notes.html_safe %>
+				<% else %>
+				  No
+				<% end %>
+			</td>
+			<td><%= current_user.is_admin? ? review.user.try(:last_sign_in_ip) : "-"  %></td>
+	    </tr>
+	  <% end %>
+	</tbody>	
+</table>
+
+
+
+<h4>Published Reviews</h4>
+
+<table id="published_review" >
+	<thead>
+	  <tr>
+	  	<th>Sr. No.</th>
+		<th>Date</th>
+		<th>Ticket Number</th>
+		<th>Review</th>
+		<th>Company</th>
+		<th>Title</th>
+	    <th>Customer Name</th>
+	    
+	  </tr>
+	</thead>
+
+	<tbody>
+	  <% @published_reviews.each.with_index(1) do |review,index| %>
+	    <tr>
+	    	<td><%= index %></td>
+			<td><%=review.created_at.strftime("%d/%m/%Y | %H:%M") rescue nil %></td>
+			<td><%=review.ticket_number rescue nil %></td>
+			<td><%=review.review_type rescue nil %></td>
+			<td><%=review.company.title rescue nil %></td>
+			<td><%=review.title rescue nil %></td>
+			<td><%=review.try(:user).try(:preferred_alias)%></td>
+		</tr>
+	  <% end %>
+	</tbody>
+</table>
+
+
+  	 <% if can? :manage, Seo %>
+<h4>Seo</h4>
+
+<table id="seos" >
+  <thead>
+    <tr>
+      <th width="10%">Meta Title</th>
+      <th width="15%">Meta Keywords</th>
+      <th width="10%">Review</th>
+      <th width="20%">Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @seos.each do |seo| %>
+      <tr>
+        <td><%=seo.meta_title rescue nil%></td>
+        <td><%= (seo.meta_description[0..50]).html_safe %></td>
+        <td><%=seo.meta_keyword.html_safe%></td>
+        
+        <td>
+        <%= link_to 'Edit', edit_admin_seo_path(seo) , class: "btn btn-primary" if can? :edit, Seo%>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>
+
+<% unless current_user.is? :jagent %>
+<h4>Archived Reviews</h4>
+
+<table id="archived_review" >
+  <thead>
+    <tr>
+      <th width="10%">Date</th>
+      <th width="15%">Ticket Number</th>
+      <th width="10%">Review</th>
+      <th width="15%">Company</th>
+      <th width="15%">Title</th>
+      <th width="15%">Customer Name</th>
+      <th width="20%">Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @archived_reviews.each do |review| %>
+      <tr>
+        <td><%=review.created_at.strftime("%d/%m/%Y | %H:%M") rescue nil %></td>
+		<td><%=review.ticket_number rescue nil %></td>
+		<td><%=review.review_type rescue nil %></td>
+		<td><%=review.company.title rescue nil %></td>
+		<td><%=review.title rescue nil %></td>
+        <td><%=review.try(:user).try(:preferred_alias)%></td>
+        <td>
+        <%= link_to 'Show', admin_review_path(review) , class: "btn btn-primary" if can? :show, Review%>
+        <%#= link_to 'Destroy', admin_review_path(review), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h4>Archived Files</h4>
+
+<table id="arfiles" >
+  <thead>
+    <tr>
+       <th>Sr. No.</th>
+       <th>Ticket No</th>
+       <th>Date</th>
+       <th>File Name</th>
+       <th>Reason</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @archived_attachments.each.with_index(1) do |ar,index| %>
+      <tr>
+      	<td><%= index %></td>
+      	<td><%= ar.ticket_number %></td>
+      	<td><%= ar.created_at.strftime("%d/%m/%Y | %H:%M") rescue nil %></td>
+        <td><%= link_to "Attachment",ar.file.url  %>&nbsp;</td>
+        <td><%= ar.notes.html_safe %>&nbsp;</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>

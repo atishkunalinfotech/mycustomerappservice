@@ -1,0 +1,250 @@
+<%= render 'tab' %>
+</br>
+<strong>Download Data for 12 Months period (From <%= (1.year.ago).strftime('%d-%m-%Y')%>  to  <%= (Date.today).strftime('%d-%m-%Y')%>)</strong></br></br>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Summary of reviews Excel", customer_record_admin_reports_path%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Industry conversion stats", conversion_industry_admin_reports_path(params.merge(format: "xls")), :method=> :get%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Supplier conversion stats", conversion_company_admin_reports_path(params.merge(format: "xls")), :method=> :get%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Customer Details", all_customers_admin_reports_path(params.merge(format: "xls")), :method=> :get%><br/>
+
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Junior Agents", jagent_admin_reports_path(params.merge(format: "xls")), :method=> :get%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Senior Agents", sagent_admin_reports_path(params.merge(format: "xls")), :method=> :get%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Active Customers (6 Months)", active_customers_admin_reports_path(params.merge(format: "xls")), :method=> :get%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Suppliers Profiles", suppliers_profiles_admin_reports_path(params.merge(format: "xls")), :method=> :get%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Industry xls", industry_xls_admin_reports_path%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Company/Supplier xls", company_xls_admin_reports_path(params.merge(format: "xls")), :method=> :get%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Total reviews", total_xls_admin_reports_path%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Most complaints/compliments",most_company_xls_admin_reports_path%><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "List Of Registered Suppliers", registered_suppliers_admin_reports_path(params.merge(format: "xls")), :method=> :get %><br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "List Of Unregistered Suppliers", unregistered_suppliers_admin_reports_path(params.merge(format: "xls")), :method=> :get %>
+<br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Download Poll Results(12 months)", polls_admin_reports_path(params.merge(format: "xls")), :method=> :get %>
+<br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Download reviews processed by each agent (12 months)", reviews_processed_admin_reports_path(params.merge(format: "xls")), :method=> :get %>
+<br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Download accuracy of agents output (12 months)", agent_output_admin_reports_path(params.merge(format: "xls")), :method=> :get %>
+<br/>
+<%= link_to image_tag('/assets/excel.png', :border=>"0", :align=>"absmiddle") + "Download Agents performance (12 months)", agent_performance_admin_reports_path(params.merge(format: "xls")), :method=> :get %>
+<br/>
+
+<br/><br/>
+
+
+<table>
+<%= form_for :report, :url=> admin_reports_path, :method => :get do |f| %>
+  <h2>Filter Data</h2>
+    <tr>
+    <div class="review_form">
+			<div class="name_lft">Industry: </div>
+			<div class="small-input2">
+			  <%= f.collection_select :industry_id, Industry.order(:title) + [Industry.new(:id => Industry.last.id,:title => "Other")], :id,:title,{:include_blank=>"Select Industry"},:rel => "/admin/industry/companies_by_industry",   onchange: 'CheckOther();'%>
+			  <input type="text" id="other_type" name="other_type"><br/>
+			</div>
+
+		</div>
+
+		<div class="review_form">
+			<div class="name_lft">Company: </div>
+			<div class="small-input2">
+			    <%= f.collection_select :company_id, @companies, :id, :title,  {:include_blank=>"Select Company"}, :rel => "/admin/company/towns_by_company"%>
+		    <input type="text" id="txt_report_company_id" name="txt_report_company_id"><br>
+
+			</div>
+		</div>
+
+		<div class="review_form">
+			<div class="name_lft">Town: </div>
+			<div class="small-input2">
+			   <%= f.collection_select :town_id, @towns+ [Industry.new(:id => Town.last.id + 1,:title => "Other")], :id, :title, {:include_blank=>"Select Town"}, :rel => "/admin/town/locations_by_town_and_company"%>
+			   <!-- <input type="text" id="txt_review_town_id" name="txt_review_town_id"><br> -->
+			   	<input type="text" id="other_town" name="txt_report_town_id"><br>
+			</div>
+
+		</div>
+
+		<div class="review_form">
+			<div class="name_lft">Location: </div>
+			<div class="small-input2">
+			   <%= f.collection_select :location_id, @locations ,:id ,:title, {:include_blank=>"Select Location"}%>
+			   	<input type="text" id="txt_report_location_id" name="txt_report_location_id"><br>
+			</div>
+		</div>
+
+   <tr>
+     <td>Review Type</td>
+   	 <td><%= f.select :review_type, (options_for_select([['Select Review Type', ''],['Compliment', 'compliment'], ['Complaint', 'complaint']],selected: :review_type))%></td>
+   </tr>
+   <tr><strong>Choose Nature Of Review according to Review Type</strong></tr>
+   <tr>
+   	 <td>Nature of Review (Compliment)</td>
+   	 <td><%= f.select :nature_of_review_eq, NatureOfReview.where('review_type = ?', 'compliment').map{|s| [s.title, s.title]}, {:prompt => "Select Nature Of Review"}%></td>
+
+     <td>Nature of Review (Complaint)</td>
+   	 <td><%= f.select :nature_of_review_eq, NatureOfReview.where('review_type = ?', 'complaint').map{|s| [s.title, s.title]}, {:prompt => "Select Nature Of Review"}%></td>
+
+   </tr>
+   <td><%= button_tag  :submit ,name:"subaction",value: "update",:class => "btn btn btn-primary" %></td>
+   
+<%end%>
+</table>
+<br/><br/>
+
+<%if params[:subaction] == "update"%>
+
+<%unless @reviews.blank?%>
+   <%= link_to "Download Filter Data", admin_reports_path(params.merge(format: "xls")), :method=> :get, :class => "btn btn-primary" %>
+<%end%>
+<h4>Reviews</h4>
+
+<table id="admin_review_xls" >
+	<thead>
+	  <tr>
+			<th width="10%">Date</th>
+			<th width="15%">Ticket Number</th>
+			<th width="10%">Review</th>
+			<th width="15%">Company</th>
+			<th width="15%">Title</th>
+	        <th width="15%">Customer Name</th>
+	  </tr>
+	</thead>
+
+	<tbody>
+	  <% @reviews.each do |review| %>
+	    <tr>
+				<td><%=review.created_at.strftime("%d/%m/%Y | %H:%M") rescue nil %></td>
+				<td><%=review.ticket_number rescue nil %></td>
+				<td><%=review.review_type.titleize rescue nil %></td>
+				<td><%=review.company.title.titleize rescue nil %></td>
+				<td><%=review.title.titleize rescue nil %></td>
+			    <td><%=review.try(:user).try(:full_name) rescue nil%></td>
+	    </tr>
+	  <% end %>
+	</tbody>	
+</table>
+<%end%>
+
+
+
+<h1>Totals – over a 12 month period (From <%= (1.year.ago).strftime('%d-%m-%Y')%>  to  <%= (Date.today).strftime('%d-%m-%Y')%>)</h1>
+<%= link_to "Download Excel",admin_total_reviews_path(params.merge(format: "xls")), :method=> :get, :class => "btn btn-primary"  %>
+<table id="total_compliment">
+
+	<thead>
+		<tr>
+			<th>Total Reviews</th>
+			<th>Total Count</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Compliments</td>
+			<td><%= @compliments.count rescue nil%></td>
+		</tr>
+		<tr>
+			<td>Complaint</td>
+			<td><%= @complaints.count rescue nil%></td>
+		</tr>
+		<tr>
+			<td><strong>Total</strong></td>
+			<td><%= @complaints.count + @compliments.count%></td>
+		</tr>
+
+	</tbody>
+</table>
+
+<br/><br/>
+<div>
+<%= link_to "Download Excel",admin_nature_of_compliments_path(params.merge(format: "xls")), :method=> :get, :class => "btn btn-primary"  %>
+<table id="compliments">
+	<thead>
+		<tr>
+			<th>Nature of Compliment</th>
+			<th>Total</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<% @n.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+		
+
+	</tbody>
+</table>
+</div>
+<br/><br/>
+<div>
+	<%= link_to "Download Excel",admin_nature_of_complaints2_path(params.merge(format: "xls")), :method=> :get, :class => "btn btn-primary"  %>
+<table id="complaints">
+	<thead>
+		<tr>
+			<th>Nature of Complaints</th>
+			<th>Total</th>
+		</tr>
+
+	</thead>
+
+	<tbody>
+		<% @n1.each do |r| %>
+		<tr>
+			<td><%= r[0] %></td>
+			<td><%= r[1] %></td>
+		</tr>
+		<% end %>
+		
+
+	</tbody>
+</table>
+</div>
+
+ <% content_for :script do %>
+ 
+  <%= javascript_include_tag "reports" %>
+
+<script>
+  $( document ).ready(function() {
+	$("#other_type").hide();
+	$("#nature").hide();
+	$("#other_town").hide();
+
+    function CheckOther()
+{
+  if (document.getElementById("report_industry_id").value == <%= Industry.last.id %>){
+        $("#other_type").show();
+    }     
+    else{
+       $("#other_type").hide();
+    }     
+}
+
+
+
+function CheckOther2()
+{
+  if (document.getElementById("report_nature_of_review").value == "Other"){
+        $("#nature").show();
+    }     
+    else{
+       $("#nature").hide();
+    }     
+}
+
+function CheckOther_town()
+{
+  if (document.getElementById("report_town_id").value == <%= Town.last.id + 1 %>){
+        $("#other_town").show();
+    }     
+    else{
+       $("#other_town").hide();
+    }     
+}
+});
+
+
+</script>
+<% end %>

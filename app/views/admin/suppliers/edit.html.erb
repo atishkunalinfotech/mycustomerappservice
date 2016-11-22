@@ -1,0 +1,4 @@
+<%= form_for :supplier, url: admin_supplier_path(@supplier.id), html: {method: :PUT} do |f| %>
+<%#= form_for([:admin,@supplier]) do |f| %>
+ <%= render 'fields', :f => f %>
+<% end %>

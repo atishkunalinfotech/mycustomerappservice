@@ -1,0 +1,170 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#more_details").hide();
+  $("#hide").hide();
+  
+  $("#hide").click(function(){
+    $("#more_details").hide();
+    $("#show").show();
+    $("#hide").hide();
+  });
+  $("#show").click(function(){
+    $("#more_details").show();
+    $("#show").hide();
+    $("#hide").show();
+  });
+
+  $("#hidden").click(function(){
+    $("#more_details").hide();
+    $("#show").show();
+    $("#hide").hide();
+
+  });
+});
+</script>
+
+<p id="notice"><%= notice %></p>
+<% if @review.change_date %>
+<p>
+  <strong>Converted:</strong>
+  Yes
+</p>
+<% end %>
+
+<p>
+  <strong>Ticket Number:</strong>
+  <%= @review.ticket_number %>
+</p>
+<p>
+  <strong>Review Type:</strong>
+  <%= @review.review_type %>
+</p>
+  <% unless current_user.is_jagent? %>
+      <p class="field">
+         <strong>Customer Name: </strong><%= @review.user.try(:full_name) %>
+      </p>
+      <p class="field">
+         <strong>Customer Email: </strong><%= @review.user.email %>
+      </p>
+      <% if @review.review_type == "complaint" %>
+        <p class="field">
+           <strong>Desired Outcome: </strong><%= @review.desired_outcome %>
+        </p>
+      <% end %>
+      <% end %>
+<p>
+  <strong>Title:</strong>
+  <%= @review.title %>
+</p>
+<p>
+  <strong>Review:</strong>
+  <%= @review.message.html_safe %>
+</p>
+
+<p>
+  <strong>Industry:</strong>
+  <%= @review.industry.title rescue nil%>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @review.company.title rescue nil%>
+</p>
+
+<p>
+  <strong>Town:</strong>
+  <%= @review.town.title rescue nil%>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @review.location.title rescue nil%>
+</p>
+
+<p>
+  <strong>Personal Responsible:</strong>
+  <%= @review.personal_responsible %>
+</p>
+
+<p>
+  <strong>Nature of Review:</strong>
+  <%= @review.nature_of_review %>
+</p>
+
+<%if @review.is_modified%>
+<p>
+  <strong>Modified review:</strong>
+  <%= raw(@review.modified_review) %>
+</p>
+<%end%>
+<%if @review.archive || @review.notes %>
+  <p>
+    <strong>Reason for Archive:</strong>
+    <%= raw(@review.notes) %>
+  </p>
+<%end%>
+
+<p>
+  <strong>Incident Date:</strong>
+  <%= @review.date.strftime("%d %b %Y")  %>
+</p>
+<p>
+  <strong>Incident Time:</strong>
+  <%= @review.datetime.strftime("%H:%M")  %>
+</p>
+<p>
+  <strong>Created Date:</strong>
+  <%= @review.created_at.strftime("%d %b %Y %H:%M") %>
+</p>
+<p>
+  <strong>Published Date:</strong>
+  <%= @review.published_date.strftime("%d %b %Y %H:%M") if @review.ispublished %>
+</p>
+ <%if @review.ispublished%>
+   <%= link_to 'Back', edit_admin_review_path(@review), class: "btn btn-primary" if can? :read, Review %>
+ <%end%>
+<% if @review.ispublished || @review.archive || @review.is_modified %>
+<% else %>
+  <% if (current_user.is? :jagent) && @review.monitor_jagent.modified_review %>
+  <% elsif current_user.is? :jagent %>
+	<%= link_to 'Edit', edit_admin_review_path(@review), class: "btn btn-primary" if can? :edit, Review %>
+  <% else %>
+  <%= link_to 'Edit', edit_admin_review_path(@review), class: "btn btn-primary" if can? :edit, Review %>
+  <% end %>
+<%end%>
+<% if @review.is_ticket_open &&  @review.comments.supplier_comments.count > 0  %>
+  <% if current_user.role =="jagent" %>
+  <% else %>
+    <%= link_to 'Close Ticket', admin_ticket_closed_path(:review_id => @review.id) , :confirm => "Are you sure, you want to close this ticket..?",method: :put, :class => "btn btn-primary" %>
+  <% end %>
+<% end %>
+<h3>Notes</h3>
+<div>
+  <%= render 'review_notes' %>
+</div>
+<div>
+  <%= render 'admin/review_notes/review_note' %>
+</div>
+
+
+<h3>Comments</h3>
+<div id="comments"> 
+  <%= render @review.comments.order("id desc").limit(2) %>
+</div>
+
+<% if @review.comments.count > 2%>
+  <input type="button" id="hide" class="btn btn-primary" value="Hide Comments">
+  <input type="button" id="show" class="btn btn-primary" value="Show More Comments">
+<%end%>
+<div id="more_details">
+  <div id="comments"> 
+    <%= render @review.comments.order("id desc").drop(2) %>
+  </div>
+  <input type="button" id="hidden" class="btn btn-primary" value="Hide Comments">
+</div>
+<% if @review.ispublished %>
+  <%unless @review.archive == true%>
+    <%= render :file => 'admin/comments/new' %>
+  <%end%>
+<%end%>

@@ -1,0 +1,48 @@
+<h4>All Customers (12 Months)</h4>
+	<table id="customers">
+		<thead>
+		  <tr>
+		    <th>Sr. No. </th>
+		    <th width="15%">First Name</th>
+		    <th width="15%">Last Name</th>
+		    <th width="30%">Email</th>
+		    <th width="20%">Email Confirmation</th>
+		    <th width="20%">Preferred Alias</th>
+		    <th width="20%">Age</th>
+		    <th width="20%">Gender</th>
+		    <th width="20%">Address line 1</th>
+		    <th width="20%">Address line 2</th>
+		    <th width="20%">Town</th>
+		    <th width="20%">country</th>
+		    <th width="20%">Lives in</th>
+		    <th width="20%">Code</th>
+		  </tr>
+		</thead>
+
+		<tbody>
+		  <% @customers.each_with_index.each do |user,i| %>
+		    <tr>
+		      <td><%= i+1 %></td>
+		      <td><%=user.first_name rescue nil%></td>
+		      <td><%=user.last_name rescue nil%></td>
+		      <td><%=user.email rescue nil%></td>
+		      <td><%=user.confirmed_at.present? ? 'Confirmed' : 'Pending'%></td>
+		      <td><%=user.preferred_alias rescue nil%></td>
+		      <td><%=user.age rescue nil%></td>
+		      <td><% if user.gender == '1' %>
+				    <%="Male"%>
+				    <%else%>
+				    <%="Female"%>
+				    <%end%>
+			  </td>
+		      <td><%=user.address_line1 rescue nil%></td>
+		      <td><%=user.address_line2 rescue nil%></td>
+		      <td><%=user.town rescue nil%></td>
+		      <td><%=user.country rescue nil%></td>
+		      <td><%=user.lives_in rescue nil%></td>
+		      <td><%=user.postal_code rescue nil%></td>
+		    </tr>
+		  <% end %>
+		</tbody>
+	</table>
+<br/><br/>
