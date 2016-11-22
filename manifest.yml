@@ -14,7 +14,6 @@ applications:
   name: mycustomerappservice
   host: mycustomerappservice
   disk_quota: 512M
-  buildpack: https://github.com/cloudfoundry/ruby-buildpack/
   command: bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rails s -p $PORT
   services:
     - postgres-mycustomerappservice
