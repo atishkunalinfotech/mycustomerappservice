@@ -1,4 +1,6 @@
-<%= stylesheet_link_tag    "jquery.ui.datepicker" %>
+<link rel="stylesheet" type="text/css" media="all" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"    />
+<script src="/assets/jquery-ui.js"></script>
+
 <style>
 .newdropdown
 {
@@ -210,7 +212,7 @@ select.field12 option:hover {
 				  <label for="field_terms"> <%=link_to " I agree to the Terms & Conditions *", "/terms-of-use" ,:target => "new", :style => "color:#fbaf3d;font-family:andlso;font-size:15px;" %></label>
                 </div>
                 <div class="check-one">
-                   <span style = "font-weight: lighter;color:#696969;font-family:andlso;font-size:15px;">Are you human? Please enter the values as shown in the box below.</span>
+                   <!-- <span style = "font-weight: lighter;color:#696969;font-family:andlso;font-size:15px;">Are you human? Please enter the values as shown in the box below.</span> -->
                 </div>
                 		
                         <div>
@@ -218,7 +220,7 @@ select.field12 option:hover {
                 </div>
                 		<%= f.hidden_field :review_type ,:value=>(params[:review_type] ? params[:review_type] :  @review.review_type ) %>
                 <br/>
-                <%= f.submit "Xema" ,:id => "check_checkbox",:class=>"btn2 left-align"%>
+                <%= f.submit "Submit" ,:id => "check_checkbox",:class=>"btn2 left-align"%>
             
             
             </div>

@@ -12,13 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require dataTables/jquery.dataTables
 //= require jquery.modal
 //= require bootstrap-transition
 //= require bootstrap-dropdown
 //= require bootstrap-collapse
 //= require jquery.jscrollpane.min
 //= require reviews
-//= require ckeditor/config
 //= require highcharts
 //= require highcharts/highcharts-more
 //= require highcharts/modules/exporting

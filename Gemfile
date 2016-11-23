@@ -15,7 +15,7 @@ gem 'carrierwave'
 gem 'fog'
 gem 'rmagick'
 gem 'country_select'
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.3.0'
 gem 'jquery-modal-rails'
 #gem "recaptcha", :require => "recaptcha/rails"
 gem 'twitter-bootstrap-rails'
