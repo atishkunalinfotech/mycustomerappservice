@@ -1,235 +1,235 @@
-user = User.new(first_name: 'admin',last_name: 'admin',email: 'uwindsor@customerfeedback.com',password: 'zoya1234',role: 'admin',confirmed_at: '2016-11-06 10:19:33.008972')
-user.save(:validate=>false)
+# user = User.new(first_name: 'admin',last_name: 'admin',email: 'uwindsor@customerfeedback.com',password: 'zoya1234',role: 'admin',confirmed_at: '2016-11-06 10:19:33.008972')
+# user.save(:validate=>false)
 
-NatureOfReview.delete_all
+# NatureOfReview.delete_all
 
-[ "Bad attitude",
-  "Billing/Accounts",
-  "Booking query",
-	"Breach of contract",
-	"Call centre",
-	"Damaged goods",
-	"Expiry date",
-	"Feedback/response",
-	"Hygiene",
-	"Late/no delivery",
-	"Out of stock",
-	"Pricing/bar codes",
-	"Repairs/servicing",
-	"Spam",
-	"Other"].each do |complaint|
-			NatureOfReview.create(:title=>complaint,:review_type=>"complaint")
-	end
+# [ "Bad attitude",
+#   "Billing/Accounts",
+#   "Booking query",
+# 	"Breach of contract",
+# 	"Call centre",
+# 	"Damaged goods",
+# 	"Expiry date",
+# 	"Feedback/response",
+# 	"Hygiene",
+# 	"Late/no delivery",
+# 	"Out of stock",
+# 	"Pricing/bar codes",
+# 	"Repairs/servicing",
+# 	"Spam",
+# 	"Other"].each do |complaint|
+# 			NatureOfReview.create(:title=>complaint,:review_type=>"complaint")
+# 	end
 
-[
-	"Billing/accounts",
-	"Booking",
-	"Call centre efficiency",
-	"Contract",
-	"Delivery on time",
-	"Feedback",
-	"Going the extra mile",
-	"Great attitude",
-	"Pricing",
-	"Refund",
-	"Repairs",
-	"Stock",
-	"Other"
-	].each do |compliment|
-			NatureOfReview.create(:title=>compliment,:review_type=>"compliment")
-	end
+# [
+# 	"Billing/accounts",
+# 	"Booking",
+# 	"Call centre efficiency",
+# 	"Contract",
+# 	"Delivery on time",
+# 	"Feedback",
+# 	"Going the extra mile",
+# 	"Great attitude",
+# 	"Pricing",
+# 	"Refund",
+# 	"Repairs",
+# 	"Stock",
+# 	"Other"
+# 	].each do |compliment|
+# 			NatureOfReview.create(:title=>compliment,:review_type=>"compliment")
+# 	end
 
-	  Industry.delete_all
+# 	  Industry.delete_all
 
-	["Air Travel",
-    "Banking",
-	"Broadcast",
-	"Bus Companies",
-	"County Head Offices",
-	"Doctors",
-	"Entertainment",
-	"Government",
-	"Hospitals",
-	"Hotels",
-	"Insurance",
-	"Internet",
-	"Motor",
-	"Opticians",
-	"Pay TV",
-	"Police",
-	"Real Estate",
-	"Restaurants",
-	"Retail",
-	"Schools",
-	"Supermarkets",
-	"Taxi Companies",
-	"Telecommunications",
-	"University"].each do |industry|
-			Industry.create(:title=>industry)
-	end
+# 	["Air Travel",
+#     "Banking",
+# 	"Broadcast",
+# 	"Bus Companies",
+# 	"County Head Offices",
+# 	"Doctors",
+# 	"Entertainment",
+# 	"Government",
+# 	"Hospitals",
+# 	"Hotels",
+# 	"Insurance",
+# 	"Internet",
+# 	"Motor",
+# 	"Opticians",
+# 	"Pay TV",
+# 	"Police",
+# 	"Real Estate",
+# 	"Restaurants",
+# 	"Retail",
+# 	"Schools",
+# 	"Supermarkets",
+# 	"Taxi Companies",
+# 	"Telecommunications",
+# 	"University"].each do |industry|
+# 			Industry.create(:title=>industry)
+# 	end
 
 
-	Company.delete_all
+# 	Company.delete_all
     
 	
-	[ "ABC Bank",
-	"Bank of  Africa Kenya Limited",
-	"Bank of Baroda",
-	"Bank Of India",
-	"Barclays",
-	"CFC Stanbic",
-	"Chase Bank",
-	"Citi Bank",
-	"CBA",
-	"Consolidated Bank",
-	"Co-operative Bank Of Kenya",
-	"Credit Bank",
-	"Diamond Trust Bank",
-	"Eco Bank"].each do |company|
+# 	[ "ABC Bank",
+# 	"Bank of  Africa Kenya Limited",
+# 	"Bank of Baroda",
+# 	"Bank Of India",
+# 	"Barclays",
+# 	"CFC Stanbic",
+# 	"Chase Bank",
+# 	"Citi Bank",
+# 	"CBA",
+# 	"Consolidated Bank",
+# 	"Co-operative Bank Of Kenya",
+# 	"Credit Bank",
+# 	"Diamond Trust Bank",
+# 	"Eco Bank"].each do |company|
 		
 
-	  @banking = Industry.find_by_title("Banking")
-	  bank_id = @banking.id    	
-		Company.create(:title=>company,:industry_id=> bank_id)
-	  end
+# 	  @banking = Industry.find_by_title("Banking")
+# 	  bank_id = @banking.id    	
+# 		Company.create(:title=>company,:industry_id=> bank_id)
+# 	  end
 
-[ "AAR",
-	"APA",
-	"Amaco",
-	"Apollo",
-	"Britam",
-	"Cannon",
-	"Capex",
-	"CFC",
-	"CIC",
-	"Continental" ,
-	"Corporate",
-	"Directline",
-	"ICEA-LION",
-	"Fidelity Shield",
-	"First Assurance",
-	"GA"].each do |company|
+# [ "AAR",
+# 	"APA",
+# 	"Amaco",
+# 	"Apollo",
+# 	"Britam",
+# 	"Cannon",
+# 	"Capex",
+# 	"CFC",
+# 	"CIC",
+# 	"Continental" ,
+# 	"Corporate",
+# 	"Directline",
+# 	"ICEA-LION",
+# 	"Fidelity Shield",
+# 	"First Assurance",
+# 	"GA"].each do |company|
 
-		@insurance = Industry.find_by_title("Insurance")
-	    insurance_id = @insurance.id
+# 		@insurance = Industry.find_by_title("Insurance")
+# 	    insurance_id = @insurance.id
 
-		Company.create(:title=>company,:industry_id=> insurance_id)
-	end
+# 		Company.create(:title=>company,:industry_id=> insurance_id)
+# 	end
 
-	[ "Airtel",
-	"Orange",
-	"Yu"].each do |company|
+# 	[ "Airtel",
+# 	"Orange",
+# 	"Yu"].each do |company|
 
-		@tellecommunication = Industry.find_by_title("Telecommunications")
-	    tellecommunication_id = @tellecommunication.id
+# 		@tellecommunication = Industry.find_by_title("Telecommunications")
+# 	    tellecommunication_id = @tellecommunication.id
 
-		Company.create(:title=>company,:industry_id=> tellecommunication_id)
-	end
+# 		Company.create(:title=>company,:industry_id=> tellecommunication_id)
+# 	end
 
-	[ "Nakumatt",
-	"Uchumi",
-	"Naivas",
-	"Tuskys",
-	"Chandarana",
-	"Ukwala"].each do |company|
+# 	[ "Nakumatt",
+# 	"Uchumi",
+# 	"Naivas",
+# 	"Tuskys",
+# 	"Chandarana",
+# 	"Ukwala"].each do |company|
 
-		@supermarkets = Industry.find_by_title("Supermarkets")
-	    supermarkets_id = @supermarkets.id
+# 		@supermarkets = Industry.find_by_title("Supermarkets")
+# 	    supermarkets_id = @supermarkets.id
 
-		Company.create(:title=>company,:industry_id=> supermarkets_id)
-	end
+# 		Company.create(:title=>company,:industry_id=> supermarkets_id)
+# 	end
 
-[ "Best Western Premier",
-	"Boma",
-	"Collingham Gardens",
-	"Country Lodge",
-	"Country Lodg",
-	"Crowne Plaza",
-	"Eastland", 
-	"Eka", 
-	"Emerald Hotel",
-	"Fahari", 
-	"Fairmont Norfolk",
-	"Fairview", 
-	"Hemingways", 
-	"Hemingways",
-	"Hilton Hotel",
-	"Hotel Embassy"].each do |company|
+# [ "Best Western Premier",
+# 	"Boma",
+# 	"Collingham Gardens",
+# 	"Country Lodge",
+# 	"Country Lodg",
+# 	"Crowne Plaza",
+# 	"Eastland", 
+# 	"Eka", 
+# 	"Emerald Hotel",
+# 	"Fahari", 
+# 	"Fairmont Norfolk",
+# 	"Fairview", 
+# 	"Hemingways", 
+# 	"Hemingways",
+# 	"Hilton Hotel",
+# 	"Hotel Embassy"].each do |company|
 
-		@hotels = Industry.find_by_title("Hotels")
-	    hotels_id = @hotels.id
+# 		@hotels = Industry.find_by_title("Hotels")
+# 	    hotels_id = @hotels.id
 
-		Company.create(:title=>company,:industry_id=> hotels_id)
-	end
+# 		Company.create(:title=>company,:industry_id=> hotels_id)
+# 	end
 
-[ "African Express Airways",
-	"Air Arabia ",
-	"Air France",
-	"Air Kenya Express",
-	"Astral Aviation",
-	"Blue Bird Aviation",
-	"Comic Aviation",
-	"Delta Connection",
-	"East African Safari Air",
-	"Emirates",
-	"Ethiopia",
-	"Etihad Airways",
-	"Fly540",
-	"KLM",
-	"Kenya Airways",
-	"Mombasa Air Safari",
-	"Precision Airways",
-	"Rwanda Air",
-	"Safarilink Aviation",
-	"South African Airways",
-	"Swiss Airlines",
-	"Turkish Airline",
-	"Yemenia",
-	"Virgin Atlantic Cargo "].each do |company|
+# [ "African Express Airways",
+# 	"Air Arabia ",
+# 	"Air France",
+# 	"Air Kenya Express",
+# 	"Astral Aviation",
+# 	"Blue Bird Aviation",
+# 	"Comic Aviation",
+# 	"Delta Connection",
+# 	"East African Safari Air",
+# 	"Emirates",
+# 	"Ethiopia",
+# 	"Etihad Airways",
+# 	"Fly540",
+# 	"KLM",
+# 	"Kenya Airways",
+# 	"Mombasa Air Safari",
+# 	"Precision Airways",
+# 	"Rwanda Air",
+# 	"Safarilink Aviation",
+# 	"South African Airways",
+# 	"Swiss Airlines",
+# 	"Turkish Airline",
+# 	"Yemenia",
+# 	"Virgin Atlantic Cargo "].each do |company|
 
-		@air_travel = Industry.find_by_title("Air Travel")
-	    airtravel_id = @air_travel.id
+# 		@air_travel = Industry.find_by_title("Air Travel")
+# 	    airtravel_id = @air_travel.id
 
-		Company.create(:title=>company,:industry_id=> airtravel_id)
-	end
+# 		Company.create(:title=>company,:industry_id=> airtravel_id)
+# 	end
 
-  [ "Zuku",
-	"Kenya Data Networks",
-	"Access Kenya ",
-	"Telkom Kenya",
-	"Safaricom",
-	"Iway Africa",
-	"Jamii Telecom",
-	"Swift Global",
-	"Mobile Telephony",
-	"Call Key Networks"].each do |company|
+#   [ "Zuku",
+# 	"Kenya Data Networks",
+# 	"Access Kenya ",
+# 	"Telkom Kenya",
+# 	"Safaricom",
+# 	"Iway Africa",
+# 	"Jamii Telecom",
+# 	"Swift Global",
+# 	"Mobile Telephony",
+# 	"Call Key Networks"].each do |company|
 
-		@internet = Industry.find_by_title("Internet")
-	    internet_id = @internet.id
+# 		@internet = Industry.find_by_title("Internet")
+# 	    internet_id = @internet.id
 
-		Company.create(:title=>company,:industry_id=> internet_id)
-	end
+# 		Company.create(:title=>company,:industry_id=> internet_id)
+# 	end
 
-	[ "Citizen TV",
-	"KTN",
-	"K24",
-	"NTV",
-	"KBC",
-	"Kiss TV",
-	"Family TV",
-	"GBS TV",
-	"QTV",
-	"UTV",
-	"Sayare TV",
-	"Baraka / Feba FM",
-	"Biblia Husema",
-	"BBC"].each do |company|
+# 	[ "Citizen TV",
+# 	"KTN",
+# 	"K24",
+# 	"NTV",
+# 	"KBC",
+# 	"Kiss TV",
+# 	"Family TV",
+# 	"GBS TV",
+# 	"QTV",
+# 	"UTV",
+# 	"Sayare TV",
+# 	"Baraka / Feba FM",
+# 	"Biblia Husema",
+# 	"BBC"].each do |company|
 
-		@broadcast = Industry.find_by_title("Broadcast")
-	    broadcast_id = @broadcast.id
+# 		@broadcast = Industry.find_by_title("Broadcast")
+# 	    broadcast_id = @broadcast.id
 
-		Company.create(:title=>company,:industry_id=> broadcast_id)
-	end
+# 		Company.create(:title=>company,:industry_id=> broadcast_id)
+# 	end
 
 #create university list
 ["Adventist University of Africa",
