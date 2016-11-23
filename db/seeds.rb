@@ -231,7 +231,7 @@ NatureOfReview.delete_all
 		Company.create(:title=>company,:industry_id=> broadcast_id)
 	end
 
-create university list
+#create university list
 ["Adventist University of Africa",
 "Africa International",
 "Africa Nazarene",
