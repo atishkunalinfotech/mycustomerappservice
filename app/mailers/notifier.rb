@@ -1,9 +1,9 @@
 class Notifier < ActionMailer::Base
-  default from: "noreply@xemaxema.com"
+  default from: "atishkumarlewate@gmail.com"
 
   def contact(contact)
     @contact = contact
-    mail(:to=>"info@xemaxema.com",:subject=>"A new query has been received")
+    mail(:to=>"atishkumarlewate@gmail.com",:subject=>"A new query has been received")
   end
 
    def contact_user(contact)

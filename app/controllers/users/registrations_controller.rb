@@ -15,7 +15,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     if params[:guest_token].present?
       @user.guest_token = params[:guest_token]
     end
-    if verify_recaptcha
+    #if verify_recaptcha
       if @user.save
         #flash[:notice] = "You have signed up successfully. A confirmation email is sent to your e-mail.\n Please verify your email address."
         if params[:guest_token].present?
@@ -27,22 +27,22 @@ class Users::RegistrationsController < Devise::RegistrationsController
             return
           end
         end
-        redirect_to root_url,:notice => 'Thank you for registering with xemaxema.com. You will shortly receive a confirmation email. Kindly verify your email address to submit your review. If you have not received this confirmation email please check your junk mail folder and add noreply@xemaxema.com to your contact list.'
+        redirect_to root_url,:notice => 'Thank you for registering with Customer Feedback . You will shortly receive a confirmation email. Kindly verify your email address to submit your review. If you have not received this confirmation email please check your junk mail folder and add Customer Feedback to your contact list.'
       else
         render :action => :new
       end
-    else
-      if params[:guest_token].present?
-        flash[:alert] = "There was an error with the recaptcha code below. Please re-enter the code."      
-        flash.delete :recaptcha_error
-        render :new
-        # redirect_to new_user_session_url(:guest_token => params[:guest_token])
-      else
-        flash.now[:alert] = "There was an error with the recaptcha code below. Please re-enter the code."      
-        flash.delete :recaptcha_error
-        render :new
-      end
-    end
+    # else
+    #   if params[:guest_token].present?
+    #     flash[:alert] = "There was an error with the recaptcha code below. Please re-enter the code."      
+    #     flash.delete :recaptcha_error
+    #     render :new
+    #     # redirect_to new_user_session_url(:guest_token => params[:guest_token])
+    #   else
+    #     flash.now[:alert] = "There was an error with the recaptcha code below. Please re-enter the code."      
+    #     flash.delete :recaptcha_error
+    #     render :new
+    #   end
+    #end
   end
 
   private
