@@ -231,7 +231,6 @@
 # 		Company.create(:title=>company,:industry_id=> broadcast_id)
 # 	end
 
-#create university list
 # ["Adventist University of Africa",
 # "Africa International",
 # "Africa Nazarene",
@@ -767,65 +766,65 @@
 #   Company.create(:title=>company,:industry_id=> healthcare_id)
 # end
 
-# puts Maintainence.first_or_create
-# ["Newlight Academy Kayole",
-# "Makini Pri Sch",
-# "Riara Road Pri Sch",
-# "Moi Educational Center- Pri",
-# "Shree Cutchi Leva Patel Pri",
-# "Carmelvale Catholic Pri Sch",
-# "Mashimoni Squatters Pri. Sch",
-# "Mogra Star Academy Pri",
-# "Mathare Community Outreach Sch",
-# "Rumsfield Academy Pri",
-# "St. Martins Pri Sch",
-# "Aef Rueben Pri Sch",
-# "Consolata  School - Pri",
-# "St James Feeding Programme And Learning Project Pr",
-# "Lepic Junior Pri Sch",
-# "Babadogo Catholic Pri Sch",
-# "Mary Immaculate Educational Centre (Pri)",
-# "Riverside Memorial School - Pri",
-# "Kiwanja Pri Sch"].each do |company|
+puts Maintainence.first_or_create
+["Newlight Academy Kayole",
+"Makini Pri Sch",
+"Riara Road Pri Sch",
+"Moi Educational Center- Pri",
+"Shree Cutchi Leva Patel Pri",
+"Carmelvale Catholic Pri Sch",
+"Mashimoni Squatters Pri. Sch",
+"Mogra Star Academy Pri",
+"Mathare Community Outreach Sch",
+"Rumsfield Academy Pri",
+"St. Martins Pri Sch",
+"Aef Rueben Pri Sch",
+"Consolata  School - Pri",
+"St James Feeding Programme And Learning Project Pr",
+"Lepic Junior Pri Sch",
+"Babadogo Catholic Pri Sch",
+"Mary Immaculate Educational Centre (Pri)",
+"Riverside Memorial School - Pri",
+"Kiwanja Pri Sch"].each do |company|
   
-#   @school = Industry.find_by_title("Schools")
-#    school_id = @school.id    	
-#   puts Company.create(:title=>company,:industry_id=> school_id)
-#  end
+  @school = Industry.find_by_title("Schools")
+   school_id = @school.id    	
+  puts Company.create(:title=>company,:industry_id=> school_id)
+ end
 
-# ["Baringo",
-# "Bomet",
-# "Bungoma",
-# "Busia",
-# "Elgeyo-Marakwet",
-# "Embu",
-# "Garissa",
-# "Homa Bay",
-# "Isiolo",
-# "Kajiado",
-# "Kakamega",
-# "Kericho",
-# "Kiambu",
-# "Kilifi",
-# "Kirinyaga",
-# "Kisii",
-# "Kisumu",
-# "Kitui",
-# "Kwale",
-# "Laikipia"].each do |company|
+["Baringo",
+"Bomet",
+"Bungoma",
+"Busia",
+"Elgeyo-Marakwet",
+"Embu",
+"Garissa",
+"Homa Bay",
+"Isiolo",
+"Kajiado",
+"Kakamega",
+"Kericho",
+"Kiambu",
+"Kilifi",
+"Kirinyaga",
+"Kisii",
+"Kisumu",
+"Kitui",
+"Kwale",
+"Laikipia"].each do |company|
   
-#   @county = Industry.find_by_title("County Head Offices")
-#    county = @county.id    	
-#   puts Company.create(:title=>company,:industry_id=> county)
-#  end 
+  @county = Industry.find_by_title("County Head Offices")
+   county = @county.id    	
+  puts Company.create(:title=>company,:industry_id=> county)
+ end 
 
-# ["Rift Valley",
-# "Western",
-# "Eastern",
-# "North Eastern",
-# "Nyanza",
-# "Central",
-# "Coast",
-# "North Eastern"].each do |town|
-# 	Town.create(:title=>town)
-# end
+["Rift Valley",
+"Western",
+"Eastern",
+"North Eastern",
+"Nyanza",
+"Central",
+"Coast",
+"North Eastern"].each do |town|
+	Town.create(:title=>town)
+end

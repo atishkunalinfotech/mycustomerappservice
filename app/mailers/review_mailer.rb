@@ -1,5 +1,5 @@
 class ReviewMailer < ActionMailer::Base
-  default from: "noreply@xemaxema.com"
+  default from: "atishkumarlewate@gmail.com"
 
   def archive_mail(review,subject)
     begin

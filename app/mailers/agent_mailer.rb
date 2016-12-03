@@ -1,5 +1,5 @@
 class AgentMailer < ActionMailer::Base
-  default from: "noreply@xemaxema.com"
+  default from: "atishkumarlewate@gmail.com"
 
   def agent_mail(agent,password)
     @agent = agent
